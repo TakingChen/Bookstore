@@ -1,0 +1,279 @@
+/*=======
+ 基本默认值
+ ========*/
+html{
+    font-size: 62.5%;
+    color: #222;
+}
+
+
+/*==========
+  自定义页面样式
+  ==========*/
+body{
+    margin:0;
+    padding:0;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+    color: #555;
+}
+
+.index-main{
+    width: 100%;
+    margin: 0 auto;
+    padding:0;
+    padding: 0;
+
+}
+
+.index-header{
+    width: 100%;
+    margin-top: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.index-header .logo{
+    margin:0 auto;
+    width: 16.5rem;
+    height: 8.3rem;
+    background: url(../img/logo-l.png) no-repeat;
+}
+.index-header .hide-text{
+    font:0/0;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+}
+
+.index-header .subtitle1{
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 30em){
+
+    .index-header .logo{
+        margin:0 auto;
+        width: 16rem;
+        height: 7rem;
+
+    }
+    .index-header .subtitle1{
+        margin-top: 1rem;
+        font-size: 1.8rem;
+}
+
+}
+
+/***
+ 注册和登陆框
+ ****/
+.sign-flow{
+    width: 100%;
+    text-align: center;
+}
+
+.sign-flow .index-tab-navs{
+    width: 100%;
+}
+
+.index-tab-navs .navs-slider{
+    position: relative;
+    display: inline-block;
+}
+
+.navs-slider a{
+    width: 4rem;
+    padding: 0 1.4rem;
+    line-height: 4.5rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #656565;
+    opacity: 7;
+    -ms-filter:"alpha(Opacity=70)";
+    -webkit-transition:opacity .15s ease-in;
+    transition: opacity .15s ease-in;
+}
+
+.navs-slider a.active{
+    color: #4da2f1;
+}
+
+.navs-slider .navs-slider-bar{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    margin:0.8rem;
+    width: 4rem;
+    height: 0.15rem;
+    background-color: #4da2f1;
+}
+.sign-flow .view{
+    width: 80%;
+    margin:0 auto;
+    font-size: 14px;
+}
+
+.view form{
+    width: 100%;
+    margin:0 auto;
+}
+
+.view .group-inputs{
+    position: relative;
+    width: 100%;
+    /*border: 1px solid #ccc;*/
+    margin: 0 auto;
+    border-radius: 3px;
+}
+.input-wrapper{
+    width: 100%;
+  /*  border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;*/
+    margin: 0 auto;
+
+}
+
+/*.input-wrapper:first-child{
+    border-top: 1px solid #ccc;
+}*/
+
+.input-wrapper input{
+    width: 30rem;
+    margin: 0;
+    padding-left: 0.5rem;
+    line-height: 4rem;
+    font-size: 1.5rem;
+    border-left: 1px solid #ccc;
+     border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: none;
+    overflow: hidden;
+}
+
+
+.group-inputs span{
+    display: none;
+    color: red;
+
+}
+
+
+
+/*登陆错误显示*/
+
+
+
+
+
+.button-wrapper{
+    width: calc(30.5rem + 2px);
+    margin:0 auto;
+}
+
+.button-wrapper .submit a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*.sign-flow .view .input-wrapper+.input-wrapper{
+    border-top: 1px solid #e8e8e8;
+}
+*/
+.button-wrapper .submit{
+    display: block;
+    width: 100%;
+    padding:0;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    cursor: pointer;
+    background: #0f88eb;
+    border-radius: 3px;
+    line-height: 4rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.button-wrapper .submit a{
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+@media only screen and (max-width: 30em){
+    .view .group-inputs{
+        margin: 0.5rem 0 1.2rem 0;
+    }
+
+    .input-wrapper input{
+        font-size: 1.3rem;
+    }
+    .view .group-inputs{
+        margin: 0 auto;
+        width: 25rem;
+    }
+
+    .button-wrapper{
+        width: 25rem;
+    }
+
+    .sign-flow .view{
+        width: 100%;
+        float: none;
+        margin:auto;
+        font-size: 1.2rem;
+    }
+    .sign-flow .submit{
+        line-height: 3.8rem;
+        font-size: 1.8rem;
+
+    }
+
+    .button-wrapper{
+        width: calc(25.5rem + 2px);
+    }
+
+
+    .input-wrapper input{
+        width: 25rem;
+    }
+
+
+    .err-username{
+        right: -7.5rem;
+        top: -19.5rem;
+    }
+
+    .err-email{
+        right: -10.3rem;
+        top: -15.5rem;
+    }
+
+    .err-password{
+        right: -2rem;
+        top: -11.5rem;
+    }
+
+    .err-confirm{
+        right: 4rem;
+        top:-7rem;
+    }
+
+    /*登陆错误显示*/
+
+    .err-account{
+        right: -11.5rem;
+        top: -11rem;
+    }
+    .err-pass{
+        right: -5.5rem;
+        top: -7rem;
+    }
+
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的</title>
+    <link rel="stylesheet" href="__PUBLIC__/css/mine.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/upload.css">
+</head>
+<body>
+      <header>
+        <nav class="top clearfix">
+            <span class="location">你的位置：广州大学</span>
+            <ul>
+                <li><a href="__APP__/Home/Index/index.html">回到首页</a></li>
+                <li><a href="__APP__/Home/Mine/mine.html" class="account">{$Think.session.account}</a></li>
+                <li><a href="#" target="_blank">购物车</a></li>
+                <li><a href="#" target="_blank">我的书库</a></li>
+                <li><a href="{:U('Index/logout')}">注销</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container clearfix">
+        <div class="container-left">
+            <nav class="tab">
+                <ul>
+                    <li class="active">
+                        <a href="#">账号信息</a>
+                    </li>
+                    <li>
+                        <a href="#">修改密码</a>
+                    </li>
+                    <li>
+                        <a href="#">读书笔记</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container-right">
+            <div class="edit-account edit-tab" style="display: block;">
+                <div class="e-touxiang">
+                    <a href="#" class="img">
+                        <img src="__PUBLIC__/img/default.jpg" alt="">
+                    </a>
+                </div>
+                <div class="e-base edit">
+                    <ul class="u-base">
+                        <li class="l1">
+                            <div class="d1">
+                                <span>账户名:</span>
+                                    <input type="text" value="{$Think.session.account}">
+                                    <span class="err-userName" style="color: red"></span>
+                            </div>
+                        </li>
+                    </ul>
+                     <button class="a-btn btn" type="submit">
+                        修改
+                    </button>
+                </div>
+            </div>
+          <!-- end of edit-account -->
+          <div class="edit-password edit-tab" style="display:none;">
+              <div class="e-password edit">
+                  <ul class="u-password">
+                        <li class="l1">
+                            <div class="d1 old-pass">
+                                <span>原密码:</span>
+                                <input type="password">
+                                <span class="err err-oPass"></span>
+                            </div>
+                        </li>
+                        <li class="l1">
+                            <div class="d1 new-pass">
+                                <span>新密码:</span>
+                                <input type="password">
+                                <span class="err err-nPass"></span>
+                            </div>
+                        </li>
+                         <li class="l1">
+                            <div class="d1 confirm-pass">
+                                <span>确认密码:</span>
+                                <input type="password">
+                                <span class="err err-cPass"></span>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="p-btn btn" type="submit">
+                        提交
+                    </button>
+              </div>
+          </div>
+          <!-- end of edit-password -->
+            <div class="edit-article edit-tab" style="display: none;">
+                    <div class="e-article">
+                        <h2 class="edit-square">编辑文章</h2>
+                        <div class="add-article">
+                            <h3>发布新文章</h3>
+                            <div class="publish-title">
+                                <span>文章标题： </span>
+                                <input type="text">
+                            </div>
+                             <div class="publish-content">
+                                 <span>文章内容：</span>
+                                  <textarea name="" id="" cols="140" rows="20"></textarea>
+                              </div>
+                              <button class="p-btn btn" type="submit">
+                                发布
+                             </button>
+                        </div>
+                        <!-- end of add-notice -->
+                        <div class="del-article">
+                            <div class="delete-article">
+                                <h3>删除文章</h3>
+                                <span class="s-time">时间</span>
+                                 <span class="s-content">文章标题</span>
+                                <ul class="clearfix">
+                                   <volist name="list" id="data" empty="没有新文章">
+                                    <li>
+                                        <span>{$data['create_time']|substr=0,10}</span>
+                                        <span>
+                                       {$data['title']}
+                                        </span>
+                                        <a class="del">删除</a>
+                                    </li>
+                                        
+                                </volist>
+                                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of e-article -->
+            </div>
+        </div>
+        <!-- end of container-right -->
+    </div>
+    <!-- end of container -->
+</body>
+<script src="__PUBLIC__/js/vendor/jquery-3.1.1.min.js"></script>
+<script>
+    var editPass = "{:U('Mine/editPass')}";
+    var editAccount = "{:U('Mine/editAccount')}";
+    var saveNewPass = "{:U('Mine/saveNewPass')}";
+    var editArticle = "{:U('Mine/editArticle')}";
+    var deleteArticle = "{:U('Mine/deleteArticle')}"; 
+</script>
+<script src="__PUBLIC__/js/mine.js"></script>
+<script src="__PUBLIC__/js/upload.js"></script>
+<script>
+
+</script>
+
+</html>

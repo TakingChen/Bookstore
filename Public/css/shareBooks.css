@@ -1,0 +1,652 @@
+/******
+*页面样式
+********/
+
+/*=======
+ 基本默认值
+ ========*/
+
+html{
+    font-size: 62.5%;
+    color: #222;
+}
+::selection{
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+ul{
+    margin:0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+
+/*==========
+  自定义页面样式
+  ==========*/
+body{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+
+a{
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover,a:acitve{
+    color: #0ae;
+    text-decoration: underline;
+}
+
+/*网站头部*/
+
+header{
+    width: 100%;
+}
+
+header .top{
+    line-height: 3rem;
+    padding: 0 1.5rem;
+    color: #fff;
+    background: #555;
+    border-bottom: 1px #ecc000 solid;
+}
+
+header .top .location{
+    float: left;
+}
+
+header .top ul{
+    text-align: right;
+}
+
+header .top ul li{
+    display: inline-block;
+}
+
+header .top ul li + li{
+    border-left: 1px solid #999;
+    margin-left: -3px;
+}
+
+header .top ul li a{
+    display: inline-block;
+    padding: 0 1.5rem;
+    color: #fff;
+}
+
+@media only screen and (max-width: 50em){
+    header .top ul li a{
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+
+}
+
+@media only screen and (max-width: 30em){
+    header .top .location,
+    header .top ul li:nth-child(5){
+        display: none;
+    }
+}
+
+header .main{
+    padding:0;
+}
+
+header .main .brand{
+    float: left;
+    padding:1rem 1.5rem 0;
+}
+
+header .main ul{
+    text-align: right;
+}
+
+header .main ul li{
+    display: inline-block;
+    border-left: 1px solid #f0ede9;
+}
+
+header .main ul li a{
+    display: inline-block;
+    padding: 0 2.5rem;
+    line-height: 5.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #7c7a65;
+    text-decoration: none;
+}
+
+header .main ul li a:hover,
+header .main ul li a:active,
+header .main ul li a.active{
+    color: #4da2f1;
+    background-color: #f8f6f1;
+}
+
+@media only screen and (max-width: 50em){
+    header .main .brand{
+        float: none;
+        display: block;
+        padding:0;
+        margin: 1.5rem auto 0.5rem;
+        text-align: center;
+    }
+
+    header .main ul{
+        text-align: center;
+    }
+
+    header .main ul li {
+        border: none;
+    }
+
+    header .main ul li a{
+        padding: 0 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 30em){
+
+    header .main ul li{
+        line-height: 3rem;
+    }
+
+    header .main ul li:first-child{
+        display: none;
+    }
+
+    header .main ul li a{
+        font-weight: normal;
+        padding: 0 0.5rem;
+    }
+}
+
+.text-hide{
+    font:0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border:0;
+}
+
+/*.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix{
+    zoom:1;
+}*/
+.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: table;
+}
+.clearfix:after{
+    clear:both;
+}
+
+/*==========
+  自定义页面样式
+  ==========*/
+body{
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+
+a{
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover,a:acitve{
+    color: #0ae;
+    text-decoration: underline;
+}
+
+/*网站头部*/
+
+header{
+    width: 100%;
+}
+
+header .top{
+    line-height: 3rem;
+    padding: 0 1.5rem;
+    color: #fff;
+    background: #555;
+    border-bottom: 1px #ecc000 solid;
+}
+
+header .top .location{
+    float: left;
+}
+
+.top .location a{
+    color: #fff;
+}
+
+header .top ul{
+    text-align: right;
+}
+
+header .top ul li{
+    display: inline-block;
+}
+
+header .top ul li + li{
+    border-left: 1px solid #999;
+    margin-left: -3px;
+}
+
+header .top ul li a{
+    display: inline-block;
+    padding: 0 1.5rem;
+    color: #fff;
+}
+
+@media only screen and (max-width: 50em){
+    header .top ul li a{
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+
+}
+
+@media only screen and (max-width: 30em){
+    header .top .location,
+    header .top ul li:nth-child(4),
+    header .top ul li:nth-child(5){
+        display: none;
+    }
+}
+
+header .main{
+    padding:0;
+}
+
+header .main .brand{
+    float: left;
+    padding:1rem 1.5rem 0;
+}
+
+header .main .search{
+    width: 30%;
+    text-align: right;
+    display: inline-block;
+    margin:1rem 0 1rem 15rem;
+}
+
+.search .search-box{
+     width: 70%;
+     display: inline-block;
+}
+.search .search-box .search-book{
+    width: 100%;
+    padding-left: 0.5rem;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+}
+
+.search .search-button{
+    width: 20%;
+    margin-left:0.3rem;
+    display: inline-block;
+}
+.search-button .do-search{
+    width: 100%;
+    line-height: 2.65rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    background: #4da2f1;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 50em){
+
+    header .main .search{
+        width: 50%;
+        margin-left: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 30em){
+    header .main ul li{
+        line-height: 3rem;
+    }
+
+    header .main ul li:first-child{
+        display: none;
+    }
+
+    header .main ul li a{
+        font-weight: normal;
+        padding: 0 0.5rem;
+    }
+
+     header .main .search{
+        display: none;
+    }
+
+    header .main .brand{
+        display: none;
+    }
+
+    header .top ul{
+        text-align: center;
+    }
+
+    header .top ul li + li{
+        border: none;
+    }
+
+    header .top ul li a{
+        font-size: 1.2rem;
+        margin-right: 2rem;
+    }
+}
+
+/**
+==主体部分
+**/
+
+.container{
+    width: 100%;
+    border-top: 2px solid #e8e8e8;
+}
+
+
+@media only screen and (max-width: 30em){
+
+   .container{
+        margin-top: 0;
+    }
+}
+
+.commonWidth{
+    width: 95%;
+}
+
+/**
+==第一级左部
+**/
+.container .level-one{
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    height: auto;
+}
+
+.level-one-main .level-one-left{
+    float: left;
+}
+
+.level-one-left .sort-title{
+    background-color: #0f88eb;
+    text-align: center;
+}
+
+.level-one-left .sort-title h2{
+    margin:0;
+    padding:0.5rem 1.8rem;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+.level-one-left .sort-name{
+    background-color: #4da2f1;
+}
+
+.sort-name ul{
+    text-align: left;
+}
+
+.sort-name ul li{
+    padding:1.3rem 1.5rem;
+    line-height: 3rem;
+}
+
+.sort-name ul li+li{
+    border-top: 1px solid #e8e8e8;
+}
+
+.sort-name ul li a{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.sort-name ul li a:hover{
+    color:#fca855;
+    text-decoration: underline;
+}
+
+/**
+==第一级中部
+**/
+
+.level-one-center{
+    position: relative;
+    z-index: -99;
+}
+
+@media only screen and (max-width: 65em){
+    .level-one-left .sort-title h2{
+        padding:0.8rem 1.2rem;
+        line-height: 2.8rem;
+        font-size: 1.8rem;
+    }
+
+    .sort-name ul li{
+        padding:0.6rem 1.2rem;
+        line-height: 2.8rem;
+    }
+    .sort-name ul li a{
+        font-size: 1.4rem;
+    }
+}
+
+
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+
+    .ad{
+        display: none;
+    }
+    .level-one-main .level-one-left{
+        float: none;
+    }
+    .level-one-left .sort-title h2{
+        padding:0.5rem 1.5rem;
+        line-height: 2rem;
+        font-size: 1.6rem;
+    }
+    .sort-name ul{
+        text-align: center;
+    }
+
+    .sort-name ul li{
+        padding:0.6rem 1.3rem;
+        line-height: 2.5rem;
+    }
+    .sort-name ul li a{
+        font-size: 1.3rem;
+    }
+
+}
+
+@media only screen and (max-width: 30em){
+    .ad{
+        display: none;
+    }
+    .level-one-main .level-one-left{
+        float: none;
+    }
+    .level-one-left .sort-title h2{
+        padding:0.5rem 1.5rem;
+        line-height: 2rem;
+        font-size: 1.6rem;
+    }
+    .sort-name ul{
+        text-align: center;
+    }
+
+    .sort-name ul li{
+        padding:0.6rem 1.3rem;
+        line-height: 2.5rem;
+    }
+    .sort-name ul li a{
+        font-size: 1.3rem;
+    }
+
+}
+
+
+/**
+==第二和第三级
+**/
+.level-two,.level-three{
+    margin:0 auto;
+    padding: 3rem auto;
+}
+.level-two-main,.level-three-main{
+    display: inline-block;
+    width: 100%;
+}
+
+.level-two-main .store-book,.level-three-main .store-book{
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+/**
+==
+**/
+
+
+.store-book .store-book-title{
+    padding:0 1rem;
+    font-size: 1rem;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.store-book-title h1{
+    margin:0 auto;
+    padding:0.7rem 1rem;
+    color: #1193ae;
+    font-family: "Microsoft YaHei",Arial;
+}
+
+.store-book .store-book-content{
+    display: block;
+
+}
+
+.store-book-content ul{
+    width: 100%;
+    display: inline-block;
+}
+.store-book-content ul .book-item{
+    width: calc(16.6666667%);
+    float: left;
+}
+
+.book-item p span{
+    font-size: 1.5rem;
+}
+.book-item .touxiang1,.touxiang{
+    margin-top: 1.5rem;
+}
+
+.touxiang1 img{
+    border-radius: 50%;
+}
+
+.touxiang img{
+    border-radius: 34%;
+}
+
+.store-book-content a:hover{
+    color:#fca855;
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 62em){
+    .store-book .store-book-title{
+        text-align: center;
+    }
+    .store-book-content ul .book-item{
+     width: calc(33.33333333% - 1rem);
+    }
+}
+
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+    .store-book .store-book-title h1{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .store-book-content ul .book-item{
+        margin-left: 1rem;
+    }
+    .book-item .detail p span{
+        font-size: 1.4rem;
+    }
+
+}
+
+@media only screen and  (max-width: 30em){
+    .store-book .store-book-title{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .store-book-content ul .book-item{
+        width: auto;
+        display: inline-block;
+        margin:0 auto;
+
+    }
+
+    .book-item .touxiang{
+        float: left;
+        margin-right: 1.5rem;
+    }
+    .book-item .detail{
+        float: right;
+        margin: 1.8rem 0;
+    }
+
+    .book-item .detail p span{
+        font-size: 1.3rem;
+    }
+}
+
+/*底部*/
+
+footer{
+    width: 100%;
+    padding:3rem 0 5rem;
+    background-color: #ededed;
+}
+
+
+footer p{
+    text-align: center;
+    color: #999;
+}

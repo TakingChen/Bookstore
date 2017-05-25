@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>共享书圈</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="__PUBLIC__/css/shareBooks.css">
+    <link rel="stylesheet" href="__PUBLIC__/js/vendor/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/js/vendor/OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css">
+</head>
+<body>
+ <header>
+          <nav class="top clearfix">
+            <span class="location">你的位置：广州大学</span>
+            <ul>
+                <li><a href="#">欢迎回来！</a></li>
+                <li><a href=#" class="account">{$Think.session.account}</a></li>
+                <li><a href="#" target="_blank">购物车</a></li>
+                <li><a href="#" target="_blank">我的书库</a></li>
+                <li><a href="{:U('Index/logout')}">注销</a></li>
+            </ul>
+        </nav>
+        <nav class="main">
+            <a href="__APP__/Home/Index/index.html" class="brand"><img src="__PUBLIC__/img/logo.png" alt="回到首页"></a>
+            <ul>
+                <li><a href="../Index/index.html">首页</a></li>
+                <li><a href="../Sharebooks/shareBooks.html">共享书圈</a></li>
+                <li><a href="../Article/article.html">读书笔记</a></li>
+                <li><a href="#">发现</a></li>
+                <li><a href="#">公益捐书</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="level-one commonWidth">
+            <div class="level-one-main">
+                <div class="level-one-left clearfix">
+                    <div class="sort-title">
+                        <h2>全部图书分类</h2>
+                    </div>
+                    <div class="sort-name">
+                        <ul>
+                        <volist name="catname" id="catname">
+                        <li>
+                        <a href="{:U('Sharebooks/sortBooks',array('id'=>$catname['catid']))}" target="_blank">{$catname['catname']}</a>
+                        </li>
+                       <!--  <li><a href="#">历史/纪实</a></li>
+                        <li><a href="#">辅导书/教科书</a></li>
+                        <li><a href="#">小说</a></li> -->
+                        </volist>
+                        </ul>
+                    </div>
+                </div>
+            <!-- end of level-one-left -->
+                <div class="level-one-center">
+                    <div class="ad">
+                        <div class="owl-carousel">
+                            <volist name="sbImg" id="sbImg">
+                                <div class="item">
+                                    <picture>
+                                        <source srcset="__UPLOAD__/sbImg/{$sbImg['img_url']}" media="(min-width:50em)">
+                                        <source srcset="__PUBLIC__/img/banner001-m.jpg" media="(min-width:30em)">
+                                        <img src="__PUBLIC__/img/banner001.jpg" alt="2017年度报告">
+                                    </picture>                                                     
+                                </div>   
+
+                            </volist>             
+                            
+                        </div>
+                    </div>
+                </div>
+        <!-- end of level-one-center -->
+             </div>
+     <!-- end of level-one-main -->
+        </div>
+        <!-- end of level-one -->
+        <div class="level-two commonWidth clearfix">
+            <div class="level-two-main">
+                <div class="store-book">
+                    <div class="store-book-title">
+                        <h1>“书”出大户</h1>
+                    </div>
+                    <div class="store-book-content">
+                        <ul>
+                            <volist name="most_stock" id="most_stock">
+                            <li class="book-item1 book-item">
+                                <div class="touxiang1">
+                                    <a href="{:U('User/stock',array('id'=>$most_stock['userid'],'name'=>$most_stock['username']))}" target="_blank">
+                                    <img src="__PUBLIC__/img/touxiang1.jpg" alt="touxiang1">
+                                    </a>
+                                </div>
+                                <div class="detail">
+                                    <p class="ower">
+                                    <span class="ower_t">
+                                     用 户：<a href="{:U('User/stock',array('id'=>$most_stock['userid'],'name'=>$most_stock['username']))}" target="_blank">{$most_stock['username']}</a>
+                                    </span>
+                                </p>
+                                <p class="collection">
+                                    <span class="collection-n">收 藏 量：<i>{$most_stock['count']}</i></span>
+                                </p>
+                                <p class="recommend">
+                                    <span class="recommend-n">推荐读物：<a href="{:U('User/stock',array('id'=>$most_stock['userid'],'name'=>$most_stock['username']))}" target="_blank">《你还好吗》</a></span>
+                                </p>
+                                </div>
+
+                            </li>
+                            </volist>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end of store-book -->
+            </div>
+
+        </div>
+         <!-- end of level-two -->
+            <div class="level-three commonWidth clearfix">
+            <div class="level-three-main">
+                <div class="store-book">
+                    <div class="store-book-title">
+                        <h1>“书”入狂人</h1>
+                    </div>
+                    <div class="store-book-content">
+                        <ul>
+                            <li class="book-item1 book-item">
+                                <div class="touxiang">
+                                    <a href="#" class="img">
+                                    <img src="__PUBLIC__/img/touxiang1.jpg" alt="touxiang1">
+                                    </a>
+                                </div>
+                                <div class="detail">
+                                    <p class="ower">
+                                    <span class="ower_t">
+                                     用 户：<a href="#">布鲁克·巴克</a>
+                                    </span>
+                                </p>
+                                <p class="collection">
+                                    <span class="collection-n">借阅次数：<i>16</i></span>
+                                </p>
+                                <p class="recommend">
+                                    <span class="recommend-n">推荐读物：<a href="#">《你还好吗》</a></span>
+                                </p>
+                                </div>
+
+                            </li>
+                            <li class="book-item2 book-item">
+                                <div class="touxiang">
+                                    <a href="#" class="img">
+                                    <img src="__PUBLIC__/img/touxiang2.jpg" alt="touxiang1">
+                                    </a>
+                                </div>
+                                <div class="detail">
+                                    <p class="ower">
+                                    <span class="ower_t">
+                                    用 户：<a href="#">布鲁克·巴克</a>
+                                    </span>
+                                </p>
+                                <p class="collection">
+                                    <span class="collection-n">借阅次数：<i>15</i></span>
+                                </p>
+                                <p class="recommend">
+                                    <span class="recommend-n">推荐读物：<a href="#">《你还好吗》</a></span>
+                                </p>
+                                </div>
+
+                            </li>
+                            <li class="book-item3 book-item">
+                                <div class="touxiang">
+                                    <a href="#" class="img">
+                                    <img src="__PUBLIC__/img/touxiang3.jpg" alt="touxiang1">
+                                    </a>
+                                </div>
+                                <div class="detail">
+                                    <p class="ower">
+                                    <span class="ower_t">
+                                     用 户：<a href="#">布鲁克·巴克</a>
+                                    </span>
+                                </p>
+                                <p class="collection">
+                                    <span class="collection-n">借阅次数：<i>10</i></span>
+                                </p>
+                                <p class="recommend">
+                                    <span class="recommend-n">推荐读物：<a href="#">《你还好吗》</a></span>
+                                </p>
+                                </div>
+
+                            </li>
+                            <li class="book-item4 book-item">
+                                <div class="touxiang">
+                                    <a href="#" class="img">
+                                    <img src="__PUBLIC__/img/touxiang4.jpg" alt="touxiang1">
+                                    </a>
+                                </div>
+                                <div class="detail">
+                                    <p class="ower">
+                                    <span class="ower_t">
+                                     用 户：<a href="#">布鲁克·巴克</a>
+                                    </span>
+                                </p>
+                                <p class="collection">
+                                    <span class="collection-n">借阅次数：<i>8</i></span>
+                                </p>
+                                <p class="recommend">
+                                    <span class="recommend-n">推荐读物：<a href="#">《你还好吗》</a></span>
+                                </p>
+                                </div>
+
+                            </li>
+                            <li class="book-item5 book-item">
+                                <div class="touxiang">
+                                    <a href="#" class="img">
+                                    <img src="__PUBLIC__/img/touxiang4.jpg" alt="touxiang1">
+                                    </a>
+                                </div>
+                                <div class="detail">
+                                    <p class="ower">
+                                    <span class="ower_t">
+                                     用 户：<a href="#">布鲁克·巴克</a>
+                                    </span>
+                                </p>
+                                 <p class="collection">
+                                    <span class="collection-n">借阅次数：<i>6</i></span>
+                                </p>
+                                 <p class="recommend">
+                                    <span class="recommend-n">推荐读物：<a href="#">《你还好吗》</a></span>
+                                </p>
+                                </div>
+
+                            </li>
+                             <li class="book-item6 book-item">
+                                <div class="touxiang">
+                                    <a href="#" class="img">
+                                    <img src="__PUBLIC__/img/touxiang3.jpg" alt="touxiang1">
+                                    </a>
+                                </div>
+                                <div class="detail">
+                                    <p class="ower">
+                                    <span class="ower_t">
+                                     用 户：<a href="#">布鲁克·巴克</a>
+                                    </span>
+                                </p>
+                                 <p class="collection">
+                                    <span class="collection-n">借阅次数：<i>6</i></span>
+                                </p>
+                                 <p class="recommend">
+                                    <span class="recommend-n">推荐读物：<a href="#">《你还好吗》</a></span>
+                                </div>
+
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end of store-book -->
+            </div>
+        </div>
+         <!-- end of level-three -->
+    </div>
+        <!-- end of container -->
+          <footer>
+        <p>制作者：陈汉林 2016-2017</p>
+    </footer>
+</body>
+<script src="__PUBLIC__/js/vendor/jquery-3.1.1.min.js"></script>
+<script src="__PUBLIC__/js/vendor/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+<script src="__PUBLIC__/js/vendor/picturefill.min.js"></script>
+<script src="__PUBLIC__/js/shareBooks.js"></script>
+</html>

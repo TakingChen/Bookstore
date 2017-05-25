@@ -1,0 +1,387 @@
+/******
+*页面样式
+********/
+
+/*=======
+ 基本默认值
+ ========*/
+
+html{
+    font-size: 62.5%;
+    color: #222;
+}
+::selection{
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+ul{
+    margin:0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+
+
+.text-hide{
+    font:0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border:0;
+}
+
+/*.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix{
+    zoom:1;
+}*/
+.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: table;
+}
+.clearfix:after{
+    clear:both;
+}
+
+/*==========
+  自定义页面样式
+  ==========*/
+body{
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+
+a{
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover,a:acitve{
+    color: #0ae;
+    text-decoration: underline;
+}
+
+/*网站头部*/
+
+header{
+    width: 100%;
+}
+
+header .top{
+    line-height: 3rem;
+    padding: 0 1.5rem;
+    color: #fff;
+    background: #555;
+    border-bottom: 1px #ecc000 solid;
+}
+
+header .top .location{
+    float: left;
+}
+
+.top .location a{
+    color: #fff;
+}
+
+header .top ul{
+    text-align: right;
+}
+
+header .top ul li{
+    display: inline-block;
+}
+
+header .top ul li + li{
+    border-left: 1px solid #999;
+    margin-left: -3px;
+}
+
+header .top ul li a{
+    display: inline-block;
+    padding: 0 1.5rem;
+    color: #fff;
+}
+
+@media only screen and (max-width: 50em){
+    header .top ul li a{
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+
+}
+
+@media only screen and (max-width: 30em){
+    header .top .location,
+    header .top ul li:nth-child(4),
+    header .top ul li:nth-child(5){
+        display: none;
+    }
+}
+
+header .main{
+    padding:0;
+}
+
+header .main .brand{
+    float: left;
+    padding:1rem 1.5rem 0;
+}
+
+
+
+
+@media only screen and (max-width: 30em){
+    header .main ul li{
+        line-height: 3rem;
+    }
+
+    header .main ul li:first-child{
+        display: none;
+    }
+
+    header .main ul li a{
+        font-weight: normal;
+        padding: 0 0.5rem;
+    }
+
+    header .main .brand{
+        display: none;
+    }
+
+    header .top ul{
+        text-align: center;
+    }
+
+    header .top ul li + li{
+        border: none;
+    }
+
+    header .top ul li a{
+        font-size: 1.2rem;
+        margin-right: 2rem;
+    }
+}
+
+/*主体页面样式*/
+.container{
+    width: 100%;
+    background: #f7f7f7;
+}
+
+/*左边*/
+.container .container-left{
+    float: left;
+    width: 20%;
+
+}
+
+.container .container-right{
+    float: right;
+    width: 79.9%;
+}
+
+.container-left .tab{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-left .tab ul{
+    margin: 2rem auto;
+}
+
+.container-left .tab ul li{
+    display: block;
+    padding: 1rem;
+    font-size: 1.6rem;
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #555;
+    border-right: none;
+}
+
+.tab ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.container-left .tab ul li.active{
+    background-color: #f7f7f7;
+}
+
+.container-left .tab ul li.active a{
+    background-color: #f7f7f7;
+    color: #000;
+}
+
+/**右边内容*/
+
+/*基本信息*/
+.container .container-right{
+    float: right;
+    width: 79.9%;
+    background: #f7f7f7;
+}
+
+.container-right .edit-account{
+    width: 100%;
+}
+
+.edit-account .e-touxiang{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.e-touxiang .img{
+    display: inline-block;
+}
+.e-touxiang .img img{
+    display: block;
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+/*编辑头像*/
+/*.touxaing{
+    display: block;
+    background: url(../img/default.jpg) no-repeat;
+    width: expression(this.width > 125 ? 125px:this.width；
+}*/
+
+/*.edit-touxiang .img span:hover{
+    display: block;
+    position: relative;
+    top: -3rem;
+    z-index: 2;
+    background-color: #fff;
+    opacity: 0.3;
+    text-decoration: none;
+    color: #000;
+}
+*/
+ .edit{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.edit ul{
+    width: 100%;
+}
+
+.edit ul .l1{
+    width: 65%;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.edit ul li .d1{
+    display: inline-block;
+    width: 90%;
+    text-align: right;
+    font-size: 1.6rem;
+}
+
+.edit ul li .d1 span{
+    text-align: right;
+}
+.edit ul li input{
+    width: 40%;
+    line-height: 2rem;
+}
+
+
+
+.edit .btn{
+    display: block;
+    width: 24%;
+    line-height: 2rem;
+    font-size: 1.6rem;
+    margin:2rem auto;
+}
+
+
+/*编辑密码*/
+.u-password .d1 input{
+    display: inline-block;
+}
+.u-password .d1 .err{
+    display: block;
+    text-align: right;
+    color: red;
+}
+
+
+/*编辑文章*/
+.e-article{
+    width: 95%;
+    display: inline-block;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+.e-article .add-article{
+    width: 100%;
+    text-align: left;
+    float: left;
+}
+
+.e-article .del-article{
+    width: 100%;
+    text-align: left;
+    float: left;
+}
+
+
+.e-article .del-article ul li,.del-book ul li{
+    margin:0.5rem 0;
+}
+
+.del-article .s-time,.del-article .s-content{
+    margin-left: 3rem;
+     padding: 1rem 4.5rem 1rem 1rem;
+}
+
+.publish-title input{
+    line-height: 1.5rem;
+    width: 90%;
+}
+
+.p-btn{
+    float: right;
+}
+
+.del-book .s-time{
+    margin-left: 3rem;
+     padding: 1rem 4.5rem 1rem 1rem;
+}
+
+
+.del-article ul li span{
+    margin-left: 2rem;
+    padding: 1rem 1rem;
+}
+
+.del-article .del{
+    float: right;
+    margin-right: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.del-article ul li a:hover{
+    color: #ff9900;
+}

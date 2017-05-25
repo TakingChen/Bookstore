@@ -1,0 +1,788 @@
+/******
+*页面样式
+********/
+
+/*=======
+ 基本默认值
+ ========*/
+
+html{
+    font-size: 62.5%;
+    color: #222;
+}
+::selection{
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+ul{
+    margin:0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+
+
+.text-hide{
+    font:0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border:0;
+}
+
+/*.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix{
+    zoom:1;
+}*/
+.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: table;
+}
+.clearfix:after{
+    clear:both;
+}
+
+/*==========
+  自定义页面样式
+  ==========*/
+body{
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+
+a{
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover,a:acitve{
+    color: #0ae;
+    text-decoration: underline;
+}
+
+/*网站头部*/
+
+header{
+    width: 100%;
+}
+
+header .top{
+    line-height: 3rem;
+    padding: 0 1.5rem;
+    color: #fff;
+    background: #555;
+    border-bottom: 1px #ecc000 solid;
+}
+
+header .top .location{
+    float: left;
+}
+
+.top .location a{
+    color: #fff;
+}
+
+header .top ul{
+    text-align: right;
+}
+
+header .top ul li{
+    display: inline-block;
+}
+
+header .top ul li + li{
+    border-left: 1px solid #999;
+    margin-left: -3px;
+}
+
+header .top ul li a{
+    display: inline-block;
+    padding: 0 1.5rem;
+    color: #fff;
+}
+
+@media only screen and (max-width: 50em){
+    header .top ul li a{
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+
+}
+
+@media only screen and (max-width: 30em){
+    header .top .location,
+    header .top ul li:nth-child(4),
+    header .top ul li:nth-child(5){
+        display: none;
+    }
+}
+
+header .main{
+    padding:0;
+}
+
+header .main .brand{
+    float: left;
+    padding:1rem 1.5rem 0;
+}
+
+header .main .search{
+    width: 30%;
+    text-align: right;
+    display: inline-block;
+    margin:1rem 0 1rem 15rem;
+}
+
+.search .search-box{
+     width: 70%;
+     display: inline-block;
+}
+.search .search-box .search-book{
+    width: 100%;
+    padding-left: 0.5rem;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+}
+
+.search .search-button{
+    width: 20%;
+    margin-left:0.3rem;
+    display: inline-block;
+}
+.search-button .do-search{
+    width: 100%;
+    line-height: 2.65rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    background: #4da2f1;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 50em){
+
+    header .main .search{
+        width: 50%;
+        margin-left: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 30em){
+    header .main ul li{
+        line-height: 3rem;
+    }
+
+    header .main ul li:first-child{
+        display: none;
+    }
+
+    header .main ul li a{
+        font-weight: normal;
+        padding: 0 0.5rem;
+    }
+
+     header .main .search{
+        display: none;
+    }
+
+    header .main .brand{
+        display: none;
+    }
+
+    header .top ul{
+        text-align: center;
+    }
+
+    header .top ul li + li{
+        border: none;
+    }
+
+    header .top ul li a{
+        font-size: 1.2rem;
+        margin-right: 2rem;
+    }
+}
+
+/***
+书籍详细页主体
+***/
+
+.container{
+    width: 100%;
+    margin-top: 2rem;
+    border-top: 2px solid #e8e8e8;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 30em){
+
+   .container{
+        margin-top: 0;
+    }
+}
+
+.commonWidth{
+    width: 95%;
+}
+
+.level-one{
+    display: inline-block;
+    margin:0 auto;
+    padding:0;
+}
+
+/*第一级左部*/
+
+.level-one .level-one-left{
+    float: left;
+    width: 25%;
+    margin-right: 2rem;
+}
+
+.level-one-left .book-img{
+}
+
+.level-one-left .book-img img{
+    width: 100%;
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+    .level-one .level-one-left{
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 30em){
+    .level-one .level-one-left{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+}
+
+/*第一级中部**/
+
+.level-one .level-one-center{
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+.level-one-center .book-detail{
+    width: 100%;
+}
+
+
+.book-detail .book-title .main-title h1{
+    font-size: 2rem;
+}
+
+.book-detail .book-title .sub-title h2{
+    font-size: 1.6rem;
+    font-weight: normal;
+    color:#666666;
+}
+
+.book-detail .book-title .main-title h1,.book-detail .book-title .sub-title h2{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.book-detail .book-info{
+    width: 100%;
+    display: inline-block;
+    float: left;
+    padding:1rem 0;
+    font-size: 1.4rem;
+    border-top: 1px dotted #ccc;
+}
+
+.book-detail .book-info .author{
+    float: left;
+    margin-right: 3rem;
+}
+
+
+.book-detail .transition{
+    width: 100%;
+    display: inline-block;
+    float: left;
+    padding:1rem 0;
+    font-size: 1.4rem;
+}
+
+.book-detail .transition .tr-place{
+    float: left;
+    margin-right: 3rem;
+}
+
+.transition .tr-send{
+    float: left;
+    margin-right: 3rem;
+}
+
+.transition .tr-send select{
+    width: 100px;
+    height: 24px;
+    line-height: 15px;
+    border: 1px solid #aaa;
+    color: #343434;
+    text-align: center;
+    padding: 2px 0;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.transition .tr-count{
+}
+
+.transition .tr-count span:first-child{
+    float: left;
+}
+
+.transition .tr-count .reduce,.transition .tr-count .add{
+    display: inline-block;
+    height: 23px;
+    width: 17px;
+    border: 1px solid #e5e5e5;
+    background: #f0f0f0;
+    text-align: center;
+    line-height: 23px;
+    color: #444;
+}
+.tr-count .add, .tr-count input, .tr-count .reduce{
+    float: left;
+    margin-right: -1px;
+    position: relative;
+    z-index: 0;
+}
+
+.tr-count .add:hover, .tr-count .reduce:hover {
+    color: #f50;
+    z-index: 3;
+    border-color: #f60;
+    cursor: pointer;
+}
+
+.transition .tr-count .count-input{
+    width: 50px;
+    height: 15px;
+    line-height: 15px;
+    border: 1px solid #aaa;
+    color: #343434;
+    text-align: center;
+    padding: 4px 0;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.book-detail .price{
+    width: 100%;
+    display: inline-block;
+    float: left;
+    padding: 1rem 0;
+    font-size: 1.4rem;
+}
+
+.book-detail .price .sign,.book-detail .price .num{
+    color: #cc0000;
+}
+
+.level-one-center .book-oper{
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.book-oper .btn{
+    display: inline-block;
+    width: 28%;
+    margin-right: 0.5rem;
+    line-height: 3.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #fff;
+    background-color:#0f88eb;
+    border: none;
+    cursor: pointer;
+}
+
+.book-oper .btn-borrow{
+}
+
+.book-oper .btn-borrowed{
+    background-color: #ccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+.book-oper .btn-buy{
+    color: #E5511D;
+    border-color: #F0CAB6;
+    background: #FFE4D0;
+}
+
+.book-oper .btn-add{
+    color: #FFF;
+    border-color: #F40;
+    background: #F40;
+}
+
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+    .level-one .level-one-center{
+        width: 45%;
+    }
+
+    .book-detail .book-title .main-title h1{
+        font-size: 1.8rem;
+    }
+
+    .book-detail .transition{
+        padding:0;
+    }
+
+    .book-detail .book-title .sub-title h2{
+        font-size: 1.4rem;
+    }
+
+    .level-one-center .book-oper{
+        margin: 1.5rem 0;
+    }
+
+    .book-oper .btn{
+        width: 45%;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .book-detail .book-info{
+        display:block;
+    }
+
+    .book-detail .book-info .author {
+        float: none;
+        margin-bottom: 1rem;
+    }
+
+    .book-detail .transition {
+        display: block;
+    }
+
+    .transition .tr-send {
+        float: none;
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 30em){
+    .level-one .level-one-center{
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .book-detail .book-title .main-title h1{
+        font-size: 1.6rem;
+    }
+
+    .book-detail .book-title .sub-title h2{
+        font-size: 1.4rem;
+    }
+
+    .book-oper{
+        display: none;
+    }
+
+    .book-detail .book-info .author{
+        margin-right: 1.5rem;
+    }
+
+    .book-detail .book-title .main-title h1,.book-detail .book-title .sub-title h2{
+        float: left;
+    }
+
+    .book-detail .transition .tr-send,.book-detail .price-r{
+        float: left;
+    }
+}
+
+/*第二辑右部*/
+
+.level-one .level-one-right{
+    float: right;
+    width: 18%;
+}
+
+.level-one-right .ower-info{
+    width: 100%;
+}
+
+.level-one-right .ower-info p:last-child{
+    text-align: right;
+    text-decoration: underline;
+}
+
+.level-one-right .ower-info p:last-child a:hover{
+    color: #ff9900;
+}
+
+.ower-info .ower-title{
+    text-align: center;
+    background-color: #0f88eb;
+}
+
+
+.ower-info .ower-title h2{
+    margin:0;
+    padding:1rem;
+    font-weight: normal;
+    color: #fff;
+}
+
+.ower-info .ower-detail{
+    margin:0;
+    padding:0 2rem;
+    border: 1px solid #0f88eb;
+    text-align: left;
+}
+
+
+
+/*progress {
+    width: 60%;
+    margin-left: 4.2rem;
+    border: 1px solid #0064B4;
+    background-color:#e6e6e6;
+    color: #0064B4;
+}
+
+progress::-moz-progress-bar{
+    background: #0064B4;
+}
+
+progress::-webkit-progress-bar{
+    background: #e6e6e6;
+}
+
+progress::-webkit-progress-value{
+    background: #0064B4;
+}
+*/
+
+
+
+/*@media only screen and (max-width: 50em){
+    .level-one .level-one-left{
+        width: 35%;
+    }
+    .level-one .level-one-center{
+        width: 40%;
+    }
+
+    .ower-info .ower-detail{
+        padding:0 1rem;
+    }
+}
+*/
+/*@media only screen and (max-width: 50em){
+    .level-one-right .ower-info p:nth-child(1){
+        display: inline-block;
+        float: left;
+    }
+}
+*/
+
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+    .level-one .level-one-right:before{
+        clear:both;
+    }
+
+     .level-one .level-one-right{
+        width: 100%;
+        text-align: center;
+        margin-top:2rem;
+    }
+
+}
+@media only screen and (max-width: 30em){
+
+    .level-one .level-one-right{
+        width: 100%;
+        float: none;
+        text-align: center;
+        margin-top:2rem;
+    }
+
+}
+
+/*第二级*/
+.level-two{
+    display: block;
+    margin:0 auto;
+    padding:0;
+}
+
+.level-two .intro-book{
+    width: 100%;
+    margin:2rem 0 5rem 0;
+}
+
+.level-two .intro-book .intro-title{
+    width: 100%;
+    display: block;
+}
+
+.level-two .intro-book .intro-title{
+    width: 100%;
+    display: block;
+}
+
+.intro-title .ul-intro{
+    display: inline-block;
+    width: 100%;
+}
+
+.intro-title .ul-intro li{
+    float: left;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    line-height: 2rem;
+    border: 1px solid #ccc;
+    border-bottom: none;
+
+}
+
+.intro-title .ul-intro li:first-child{
+    border-right: none;
+}
+
+.intro-title .ul-intro li.active{
+    background: #0f88eb;
+}
+
+.ul-intro li a{
+    font-size: 1.6rem;
+    color: #000;
+}
+
+.ul-intro li.active a{
+    color: #fff;
+}
+
+
+.intro-title ul li a{
+
+}
+
+.level-two .intro-content{
+    margin-top:-4px;
+    padding:1rem;
+    text-indent: 2rem;
+    text-align: left;
+    border: 1px solid #0f88eb;
+}
+
+@media only screen and (max-width: 30em){
+    .intro-title .ul-intro li{
+        line-height: 1.5rem;
+    }
+
+    .ul-intro li{
+        width: calc(50% - 4rem -1px);
+    }
+
+    .ul-intro li a{
+     font-size: 1.4rem;
+    }
+
+
+}
+
+
+/*当屏幕小于30em，出现底部*/
+.base-nav{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 30em){
+
+    .base-nav{
+        width: 100%;
+        display: block;
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+        background-color: #FFF;
+    }
+    .base-nav .ul-base{
+        width: 100%;
+        display: inline-block;
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+        border-top: 0.5px solid #ccc;
+
+    }
+
+    .base-nav .ul-base li{
+        float: left;
+        background: #ffffcc;
+        width:calc(25% - 2rem);
+        padding: 1rem 1rem;
+        text-align: center;
+        color: #000;
+    }
+
+    .ul-base li a{
+        color: #000;
+    }
+
+    .ul-base li:nth-child(1){
+        border-right:1px solid #ccc;
+        width:calc(25% - 3rem - 1px);
+    }
+
+    .ul-base li:nth-child(2){
+        width: calc(25% - 1rem - 1px);
+    }
+
+    .ul-base li:nth-child(3),.ul-base li:nth-child(4){
+       /* width: calc(25% - 7.2rem);*/
+    }
+
+    .ul-base li:nth-child(3){
+        background: -webkit-linear-gradient(right, #ff9933, #FF9900);
+        background: -o-linear-gradient(right, #ff9933, #FF9900);
+        background: linear-gradient(to left, #ff9933, #FF9900);
+    }
+
+    .ul-base li:nth-child(4){
+        background: -webkit-linear-gradient(right, #ff3300, #ff6600);
+        background: -o-linear-gradient(right, #ff3300, #ff6600);
+        background: linear-gradient(to left, #ff3300, #ff6600);
+    }
+
+    .ul-base li:nth-child(3) a,.ul-base li:nth-child(4) a{
+        color: #fff;
+    }
+}

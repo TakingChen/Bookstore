@@ -1,0 +1,608 @@
+/******
+*页面样式
+********/
+
+/*=======
+ 基本默认值
+ ========*/
+
+html{
+    font-size: 62.5%;
+    color: #222;
+}
+::selection{
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+ul{
+    margin:0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+/*=====
+  工具样式
+  =====*/
+.center-block{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.pull-right{
+    float: right !important;
+}
+
+.pull-left{
+    float: left !important;
+}
+
+.text-right{
+    text-align: right !important;
+}
+
+.text-left{
+    text-align: left !important;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.hide{
+    display: none !important;
+}
+
+.show{
+    display: block !important;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.text-hide{
+    font:0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border:0;
+}
+
+/*.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix{
+    zoom:1;
+}*/
+.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: table;
+}
+.clearfix:after{
+    clear:both;
+}
+
+/*==========
+  自定义页面样式
+  ==========*/
+body{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+
+a{
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover,a:acitve{
+    color: #0ae;
+    text-decoration: underline;
+}
+
+/*网站头部*/
+
+header{
+    width: 100%;
+}
+
+header .top{
+    line-height: 3rem;
+    padding: 0 1.5rem;
+    color: #fff;
+    background: #555;
+    border-bottom: 1px #ecc000 solid;
+}
+
+header .top .location{
+    float: left;
+}
+
+header .top ul{
+    text-align: right;
+}
+
+header .top ul li{
+    display: inline-block;
+}
+
+header .top ul li + li{
+    border-left: 1px solid #999;
+    margin-left: -3px;
+}
+
+header .top ul li a{
+    display: inline-block;
+    padding: 0 1.5rem;
+    color: #fff;
+}
+
+@media only screen and (max-width: 50em){
+    header .top ul li a{
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+
+}
+
+@media only screen and (max-width: 30em){
+    header .top .location,
+    header .top ul li:nth-child(5){
+        display: none;
+    }
+}
+
+header .main{
+    padding:0;
+}
+
+header .main .brand{
+    float: left;
+    padding:1rem 1.5rem 0;
+}
+
+header .main ul{
+    text-align: right;
+}
+
+header .main ul li{
+    display: inline-block;
+    border-left: 1px solid #f0ede9;
+}
+
+header .main ul li a{
+    display: inline-block;
+    padding: 0 2.5rem;
+    line-height: 5.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #7c7a65;
+    text-decoration: none;
+}
+
+header .main ul li a:hover,
+header .main ul li a:active,
+header .main ul li a.active{
+    color: #4da2f1;
+    background-color: #f8f6f1;
+}
+
+@media only screen and (max-width: 50em){
+    header .main .brand{
+        float: none;
+        display: block;
+        padding:0;
+        margin: 1.5rem auto 0.5rem;
+        text-align: center;
+    }
+
+    header .main ul{
+        text-align: center;
+    }
+
+    header .main ul li {
+        border: none;
+    }
+
+    header .main ul li a{
+        padding: 0 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 30em){
+
+    header .main ul li{
+        line-height: 3rem;
+    }
+
+    header .main ul li:first-child{
+        display: none;
+    }
+
+    header .main ul li a{
+        font-weight: normal;
+        padding: 0 0.5rem;
+    }
+}
+
+/*网站主要内容*/
+
+.container{
+    width: 100%;
+    border-top: 2px solid #e8e8e8;
+}
+
+
+/*滚动广告*/
+/*.ad{
+
+}*/
+
+
+/*最新公告*/
+.notice{
+    width: 90%;
+    margin:2rem auto 0 auto;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    background-color: #fff;
+    box-shadow: 0 0 4px #ccc;
+}
+
+.notice a{
+    float: left;
+    display: inline-block;
+    width: 70%;
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+.notice a:first-child{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space:nowrap;
+}
+
+.notice a:first-child:before{
+    content: '最新公告：\00a0\00a0';
+    color: #aaa;
+}
+
+.notice a span{
+    color: #999;
+    font-size: 1.2rem;
+    margin-right: 3rem;
+}
+
+.notice a.more{
+    float: right;
+    width: auto;
+    margin-right: 2rem;
+    color: #ff9980;
+}
+
+.more-notice{
+    display: none;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    background-color: #fff;
+    box-shadow: 0 0 4px #ccc;
+}
+
+.more-notice .u-notice{
+    width: 100%;
+    margin-left: 6rem;
+    padding:1rem 2rem;
+}
+
+.more-notice .u-notice li{
+    padding:0.5rem;
+}
+
+.u-notice li span{
+    display: inline-block;
+    margin-right: 3rem;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 30em){
+    .notice{
+        width: 96%;
+        margin:1rem auto;
+        font-size: 1.2rem;
+    }
+
+    .notice a{
+        margin-left: 1rem;
+    }
+
+    .notice a span{
+        display: none;
+    }
+}
+
+/*产品列表*/
+.product{
+    width: 90%;
+    margin:2rem auto;
+    font-size: 1.4rem;
+    background-color: #f5f9fa;
+    border-top: 2px solid #ff9900;
+    box-shadow: 0 0 4px #ccc;
+}
+
+.product h2{
+    float: left;
+    width: 20%;
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: normal;
+    color: #635c51;
+}
+
+.product h2 em{
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+.product h2 em:first-child{
+    margin-top: 4rem;
+}
+
+.product .product-content{
+    float: right;
+    width: 79.5%;
+    border-left: 1px solid #eee;
+    background-color: #fff;
+}
+
+.product .product-content .item{
+    width: 100%;
+}
+
+.product .product-content .item + .item{
+    border-top: 1px solid #eee;
+}
+
+/*.product .product-content .item h3{
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin:1.5rem 0;
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+
+.product .product-content .item h3 em{
+    margin-right: 0.5rem;
+    font-size: 3.6rem;
+    font-style: normal;
+    color: #8b999d;
+}
+
+.product .product-content .item h3 i{
+    display: block;
+    font-size: 1.2rem;
+}*/
+
+.product .product-content .item .img-book{
+    float: left;
+    width: 20%;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.product .product-content .item .img-book img{
+        width: 10rem;
+        height: 10rem;
+}
+
+
+.product .product-content .item .img-book a{
+    display: block;
+}
+
+.product .product-content .item .info{
+    float: left;
+    width: 22%;
+    padding:1rem;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    font-size: 14px;
+
+}
+
+.product .product-content .item .info p{
+    display: block;
+    text-align: left;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*.product .product-content .item .info p:last-child{
+    width: 40%;
+}*/
+
+.product .product-content .item .info p span{
+    font-size: 1.4rem;
+    color: #ff9900;
+}
+
+.product .product-content .item .info p span a,.product .product-content .item .info p span a:hover{
+    font-size: 1.4rem;
+}
+.product .product-content .item .info p span a:hover{
+    color:#ff9900;
+    text-decoration: underline;
+}
+
+.product .product-content .item .recommend{
+    float: left;
+    width: calc(58% - 4.4rem);
+    padding:1rem;
+
+
+}
+
+.product .product-content .item .recommend p{
+    margin: 1rem 0;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    color: #ff9900;
+}
+
+.product .product-content .item .recommend p span{
+    display: block;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-text-overflow:ellipsis;
+    white-space: nowrap;
+    color: #000;
+}
+
+ .item .recommend .tag .btn{
+    background-color: #fff;
+    border-radius: 30%;
+    color: #000;
+ }
+
+
+
+@media screen and (max-width: 50em){
+
+    .product h2{
+        float: none;
+        width: 100%;
+        margin-top: 2rem;
+        font-size: 2.2rem;
+    }
+
+    .product h2 em:first-child{
+        margin-top: 0;
+    }
+
+    .product h2 em{
+        display: inline;
+        font-size: 1.2rem;
+    }
+
+    .product .product-content{
+        float: none;
+        width: 100%;
+    }
+
+    .product .product-content .item .img-book{
+        width: 25%;
+        margin-bottom: 0;
+    }
+
+    .product .product-content .item .img-book img{
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .product .product-content .item .info{
+         width: 28%;
+        padding: 1rem 1rem 0;
+        font-size: 1.2rem;
+    }
+
+    .product .product-content .item .info p{
+        margin: 0.8rem;
+    }
+
+    .product .product-content .item .info p span{
+        font-size: 1.4rem;
+    }
+
+    .product .product-content .item .recommend{
+        width: calc(47% - 4.4rem);
+    }
+
+     .product .product-content .item .recommend .recommend-p,
+     .product .product-content .item .recommend .tag{
+        margin:0.5rem 0;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 30em){
+
+    .product h2 em:first-child:before{
+        content: " ";
+        display: table;
+    }
+
+/*    .product .product-content .item h3 em{
+        font-size: 2rem;
+        margin-right: 0;
+    }*/
+
+    .product .product-content .item .info{
+        float: right;
+        width: 60%;
+        padding: 1rem 0;
+        border: none;
+    }
+
+    .product .product-content .item .info p span{
+        font-size: 1.8rem;
+    }
+
+    .product .product-content .item .recommend{
+        clear: both;
+        float: none;
+        width: 100%;
+        padding: 0.5rem 0 2rem;
+        margin: auto 1rem;
+    }
+
+
+    .item .recommend .tag .btn a{
+        font-size: 1.2rem;
+        color: #000;
+        font-weight: bold;
+     }
+}
+
+
+/*底部*/
+
+footer{
+    width: 100%;
+    padding:3rem 0 5rem;
+    background-color: #ededed;
+}
+
+
+footer p{
+    text-align: center;
+    color: #999;
+}
+
+
+@media only screen and (max-width: 30em){
+    footer{
+        display: none;
+    }
+}

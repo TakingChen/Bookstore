@@ -1,0 +1,996 @@
+[ 2017-05-16T11:20:40+08:00 ] ::1 /ShareBooks/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026650s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000391s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2017-05-16T11:20:51+08:00 ] ::1 /ShareBooks/index.php/Home/User/registerData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000570s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: password E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 62 行.
+NOTIC: [8] Undefined index: repass E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0348s ]
+SQL: SELECT * FROM `users` WHERE ( username='user10' )  [ RunTime:0.0004s ]
+
+[ 2017-05-16T11:21:25+08:00 ] ::1 /ShareBooks/index.php/Home/User/registerData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: password E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 62 行.
+NOTIC: [8] Undefined index: repass E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `users` WHERE ( username='user10' )  [ RunTime:0.0004s ]
+
+[ 2017-05-16T11:21:27+08:00 ] ::1 /ShareBooks/index.php/Home/User/saveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0008s ]
+SQL: INSERT INTO `users` (`username`,`email`,`password`) VALUES ('user10','449797942@163.com','e10adc3949ba59abbe56e057f20f883e') [ RunTime:0.0119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000856s ]
+
+[ 2017-05-16T11:21:39+08:00 ] ::1 /ShareBooks/index.php/Home/User/signData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+NOTIC: [8] Undefined index: pwd E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `users` WHERE ( username='user2' )  [ RunTime:0.0004s ]
+
+[ 2017-05-16T11:21:43+08:00 ] ::1 /ShareBooks/index.php/Home/User/vertifySign.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `users` WHERE ( username='user2' and password='e10adc3949ba59abbe56e057f20f883e' )  [ RunTime:0.0003s ]
+
+[ 2017-05-16T11:21:43+08:00 ] ::1 /ShareBooks/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT `userid` FROM `users` WHERE ( username='user2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0320s ]
+SQL: SELECT * FROM `notice`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `notice` ORDER BY notice_id desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `upload_img` [ RunTime:0.0188s ]
+SQL: SELECT * FROM `upload_img` ORDER BY create_time desc  [ RunTime:0.0003s ]
+SQL: select a.*,b.*,c.* from zx_img a,zx_books b,categories c where a.zx_id = b.zx_id and b.catid = c.catid [ RunTime:0.0726s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2017-05-16T11:21:50+08:00 ] ::1 /ShareBooks/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0009s ]
+SQL: SELECT `userid` FROM `users` WHERE ( username='user2' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `notice`  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `notice` ORDER BY notice_id desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `upload_img` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `upload_img` ORDER BY create_time desc  [ RunTime:0.0003s ]
+SQL: select a.*,b.*,c.* from zx_img a,zx_books b,categories c where a.zx_id = b.zx_id and b.catid = c.catid [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2017-05-16T11:21:51+08:00 ] ::1 /ShareBooks/index.php/Home/Shopcar/shopcar.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002229s ]
+SQL: SHOW COLUMNS FROM `shopcar` [ RunTime:0.0321s ]
+SQL: SELECT * FROM `shopcar` WHERE ( userid='4' )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000398s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001905s ]
+
+[ 2017-05-16T11:21:58+08:00 ] ::1 /ShareBooks/index.php/Home/User/editStock.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000536s ]
+SQL: SHOW COLUMNS FROM `book_img` [ RunTime:0.0488s ]
+SQL: SELECT * FROM `book_img` ORDER BY book_id desc LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `categories`  [ RunTime:0.0002s ]
+SQL: select a.*,b.*,c.* from book_img a,user_books b,categories c where a.book_id = b.book_id and b.catid = c.catid and b.userid='4' [ RunTime:0.0432s ]
+SQL: select a.*,b.*,c.* from borrow_books a,user_books b,users c where a.book_id = b.book_id and c.userid = b.userid [ RunTime:0.0463s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000615s ]
+
+[ 2017-05-16T11:21:58+08:00 ] ::1 /ShareBooks/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0007s ]
+SQL: SELECT `userid` FROM `users` WHERE ( username='user2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `notice`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `notice` ORDER BY notice_id desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `upload_img` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `upload_img` ORDER BY create_time desc  [ RunTime:0.0006s ]
+SQL: select a.*,b.*,c.* from zx_img a,zx_books b,categories c where a.zx_id = b.zx_id and b.catid = c.catid [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000357s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2017-05-16T11:22:13+08:00 ] ::1 /ShareBooks/index.php/Home/Mine/mine.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0234s ]
+SQL: SELECT * FROM `article` WHERE ( userid='4' )  [ RunTime:0.0104s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000281s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001141s ]
+
+[ 2017-05-16T11:22:18+08:00 ] ::1 /ShareBooks/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0007s ]
+SQL: SELECT `userid` FROM `users` WHERE ( username='user2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `notice`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `notice` ORDER BY notice_id desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `upload_img` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `upload_img` ORDER BY create_time desc  [ RunTime:0.0003s ]
+SQL: select a.*,b.*,c.* from zx_img a,zx_books b,categories c where a.zx_id = b.zx_id and b.catid = c.catid [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000578s ]
+
+[ 2017-05-16T11:22:21+08:00 ] ::1 /ShareBooks/index.php/Home/Mine/mine.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `article` WHERE ( userid='4' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000443s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2017-05-16T11:22:31+08:00 ] ::1 /ShareBooks/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0007s ]
+SQL: SELECT `userid` FROM `users` WHERE ( username='user2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `notice`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `notice` ORDER BY notice_id desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `upload_img` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `upload_img` ORDER BY create_time desc  [ RunTime:0.0004s ]
+SQL: select a.*,b.*,c.* from zx_img a,zx_books b,categories c where a.zx_id = b.zx_id and b.catid = c.catid [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000423s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001338s ]
+
+[ 2017-05-16T11:22:33+08:00 ] ::1 /ShareBooks/index.php/Home/Article/article.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001340s ]
+SQL: select a.*,b.* from users a,article b where a.userid = b.userid order by b.create_time desc [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017137s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000518s ]
+
+[ 2017-05-16T11:22:36+08:00 ] ::1 /ShareBooks/index.php/Home/Sharebooks/shareBooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `categories`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `sb_img` [ RunTime:0.0965s ]
+SQL: SELECT * FROM `sb_img` ORDER BY create_time desc  [ RunTime:0.0004s ]
+SQL: select a.username,b.userid,count(b.userid) AS count from users a,user_books b where a.userid = b.userid group by b.userid order by count desc [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000348s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000429s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2017-05-16T11:27:57+08:00 ] ::1 /ShareBooks/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0007s ]
+SQL: SELECT `userid` FROM `users` WHERE ( username='user2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `notice`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `notice` ORDER BY notice_id desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `upload_img` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `upload_img` ORDER BY create_time desc  [ RunTime:0.0003s ]
+SQL: select a.*,b.*,c.* from zx_img a,zx_books b,categories c where a.zx_id = b.zx_id and b.catid = c.catid [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000684s ]
+
+[ 2017-05-16T11:28:04+08:00 ] ::1 /ShareBooks/index.php/Home/Zhenxuan/zxDetail/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: select a.*,b.*,c.* from zx_img a,zx_books b,categories c where a.zx_id = b.zx_id and b.catid = c.catid and a.zx_id = '1' [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2017-05-16T11:28:05+08:00 ] ::1 /ShareBooks/index.php/Home/Zhenxuan/zxDetail/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: select a.*,b.*,c.* from zx_img a,zx_books b,categories c where a.zx_id = b.zx_id and b.catid = c.catid and a.zx_id = '1' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000428s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001015s ]
+
+[ 2017-05-16T13:28:02+08:00 ] ::1 /ShareBooks/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0045s ]
+SQL: SELECT `userid` FROM `users` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `notice`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `notice` ORDER BY notice_id desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `upload_img` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `upload_img` ORDER BY create_time desc  [ RunTime:0.0003s ]
+SQL: select a.*,b.*,c.* from zx_img a,zx_books b,categories c where a.zx_id = b.zx_id and b.catid = c.catid [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2017-05-16T13:34:38+08:00 ] ::1 /ShareBooks/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0008s ]
+SQL: SELECT `userid` FROM `users` WHERE ( username='' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `notice`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `notice` ORDER BY notice_id desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `upload_img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `upload_img` ORDER BY create_time desc  [ RunTime:0.0003s ]
+SQL: select a.*,b.*,c.* from zx_img a,zx_books b,categories c where a.zx_id = b.zx_id and b.catid = c.catid [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012932s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001150s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001349s ]
+
+[ 2017-05-16T13:34:39+08:00 ] ::1 /ShareBooks/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000446s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2017-05-16T13:54:57+08:00 ] ::1 /ShareBooks/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2017-05-16T13:55:02+08:00 ] ::1 /ShareBooks/index.php/Home/User/registerData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: password E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 62 行.
+NOTIC: [8] Undefined index: repass E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `users` WHERE ( username='dsa' )  [ RunTime:0.0003s ]
+
+[ 2017-05-16T13:55:06+08:00 ] ::1 /ShareBooks/index.php/Home/User/registerData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: password E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 62 行.
+NOTIC: [8] Undefined index: repass E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `users` WHERE ( username='dsa' )  [ RunTime:0.0003s ]
+
+[ 2017-05-16T13:55:14+08:00 ] ::1 /ShareBooks/index.php/Home/User/registerData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000426s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: password E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 62 行.
+NOTIC: [8] Undefined index: repass E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `users` WHERE ( username='user11' )  [ RunTime:0.0003s ]
+
+[ 2017-05-16T13:55:30+08:00 ] ::1 /ShareBooks/index.php/Home/User/registerData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+NOTIC: [8] Undefined index: email E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 61 行.
+NOTIC: [8] Undefined index: password E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 62 行.
+NOTIC: [8] Undefined index: repass E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 63 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE ( username='user11' )  [ RunTime:0.0004s ]
+
+[ 2017-05-16T13:55:33+08:00 ] ::1 /ShareBooks/index.php/Home/User/saveInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0014s ]
+SQL: INSERT INTO `users` (`username`,`email`,`password`) VALUES ('user11','44797979@qq.com','e10adc3949ba59abbe56e057f20f883e') [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2017-05-16T13:55:39+08:00 ] ::1 /ShareBooks/index.php/Home/User/signData.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
+NOTIC: [8] Undefined index: pwd E:\wamp64\www\ShareBooks\Application\Home\Controller\UserController.class.php 第 76 行.
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `users` WHERE ( username='user11' )  [ RunTime:0.0003s ]
+
+[ 2017-05-16T13:55:42+08:00 ] ::1 /ShareBooks/index.php/Home/User/vertifySign.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `users` WHERE ( username='user11' and password='e10adc3949ba59abbe56e057f20f883e' )  [ RunTime:0.0003s ]
+
+[ 2017-05-16T13:55:42+08:00 ] ::1 /ShareBooks/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0009s ]
+SQL: SELECT `userid` FROM `users` WHERE ( username='user11' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `notice`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `notice` ORDER BY notice_id desc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `upload_img` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `upload_img` ORDER BY create_time desc  [ RunTime:0.0003s ]
+SQL: select a.*,b.*,c.* from zx_img a,zx_books b,categories c where a.zx_id = b.zx_id and b.catid = c.catid [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2017-05-16T13:56:13+08:00 ] ::1 /ShareBooks/index.php/Home/Sharebooks/shareBooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `categories`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `sb_img` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `sb_img` ORDER BY create_time desc  [ RunTime:0.0003s ]
+SQL: select a.username,b.userid,count(b.userid) AS count from users a,user_books b where a.userid = b.userid group by b.userid order by count desc [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001913s ]
+
+[ 2017-05-16T13:56:20+08:00 ] ::1 /ShareBooks/index.php/Home/User/stock/id/1/name/hanry.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000620s ]
+SQL: select a.*,b.*,c.* from book_img a,user_books b,categories c where a.book_id = b.book_id and b.catid = c.catid and b.userid='1' [ RunTime:0.0012s ]
+SQL: select c.catname from user_books b,categories c where b.catid = c.catid and b.userid='1' [ RunTime:0.0003s ]
+SQL: select author from user_books where userid='1' [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2017-05-16T13:56:49+08:00 ] ::1 /ShareBooks/index.php/Home/Sharebooks/sortBooks/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000929s ]
+SQL: select a.*,b.*,c.* from book_img a,user_books b,categories c where a.book_id = b.book_id and b.catid = c.catid  and c.catid='1' [ RunTime:0.0012s ]
+SQL: select c.catname from user_books b,categories c where b.catid = c.catid and c.catid='1' limit 1 [ RunTime:0.0002s ]
+SQL: select a.author from user_books a,categories c where c.catid='1' and a.catid = c.catid [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] Undefined variable: user E:\wamp64\www\ShareBooks\Application\Runtime\Cache\Home\d5921843b34925bcfe7f5b31496a5ae3.php 第 85 行.
+NOTIC: [8] Undefined variable: user E:\wamp64\www\ShareBooks\Application\Runtime\Cache\Home\d5921843b34925bcfe7f5b31496a5ae3.php 第 85 行.
+NOTIC: [8] Undefined variable: user E:\wamp64\www\ShareBooks\Application\Runtime\Cache\Home\d5921843b34925bcfe7f5b31496a5ae3.php 第 85 行.
+NOTIC: [8] Undefined variable: user E:\wamp64\www\ShareBooks\Application\Runtime\Cache\Home\d5921843b34925bcfe7f5b31496a5ae3.php 第 85 行.
+NOTIC: [8] Undefined variable: user E:\wamp64\www\ShareBooks\Application\Runtime\Cache\Home\d5921843b34925bcfe7f5b31496a5ae3.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000647s ]
+
+[ 2017-05-16T13:56:52+08:00 ] ::1 /ShareBooks/index.php/Home/Sharebooks/sortBooks/id/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: select a.*,b.*,c.* from book_img a,user_books b,categories c where a.book_id = b.book_id and b.catid = c.catid  and c.catid='2' [ RunTime:0.0008s ]
+SQL: select c.catname from user_books b,categories c where b.catid = c.catid and c.catid='2' limit 1 [ RunTime:0.0003s ]
+SQL: select a.author from user_books a,categories c where c.catid='2' and a.catid = c.catid [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Undefined variable: user E:\wamp64\www\ShareBooks\Application\Runtime\Cache\Home\d5921843b34925bcfe7f5b31496a5ae3.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000466s ]
+
+[ 2017-05-16T13:56:56+08:00 ] ::1 /ShareBooks/index.php/Home/Sharebooks/sortBooks/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+SQL: select a.*,b.*,c.* from book_img a,user_books b,categories c where a.book_id = b.book_id and b.catid = c.catid  and c.catid='3' [ RunTime:0.0008s ]
+SQL: select c.catname from user_books b,categories c where b.catid = c.catid and c.catid='3' limit 1 [ RunTime:0.0003s ]
+SQL: select a.author from user_books a,categories c where c.catid='3' and a.catid = c.catid [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000214s ]
+NOTIC: [8] Undefined variable: user E:\wamp64\www\ShareBooks\Application\Runtime\Cache\Home\d5921843b34925bcfe7f5b31496a5ae3.php 第 85 行.
+NOTIC: [8] Undefined variable: user E:\wamp64\www\ShareBooks\Application\Runtime\Cache\Home\d5921843b34925bcfe7f5b31496a5ae3.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2017-05-16T13:57:01+08:00 ] ::1 /ShareBooks/index.php/Home/User/stock/id/1/name/hanry.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+SQL: select a.*,b.*,c.* from book_img a,user_books b,categories c where a.book_id = b.book_id and b.catid = c.catid and b.userid='1' [ RunTime:0.0009s ]
+SQL: select c.catname from user_books b,categories c where b.catid = c.catid and b.userid='1' [ RunTime:0.0002s ]
+SQL: select author from user_books where userid='1' [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000471s ]
+
+[ 2017-05-16T13:57:03+08:00 ] ::1 /ShareBooks/index.php/Home/Bookdetail/bookdetail/id/1/name/hanry.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: select a.*,b.*,c.* from book_img a,user_books b,categories c where a.book_id = b.book_id and b.catid = c.catid and a.book_id = '1' [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000835s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000899s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001117s ]
+
+[ 2017-05-16T13:57:20+08:00 ] ::1 /ShareBooks/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0006s ]
+SQL: SELECT `userid` FROM `users` WHERE ( username='user11' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `notice`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `notice` ORDER BY notice_id desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `upload_img` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `upload_img` ORDER BY create_time desc  [ RunTime:0.0003s ]
+SQL: select a.*,b.*,c.* from zx_img a,zx_books b,categories c where a.zx_id = b.zx_id and b.catid = c.catid [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2017-05-16T13:57:22+08:00 ] ::1 /ShareBooks/index.php/Home/User/editStock.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+SQL: SHOW COLUMNS FROM `book_img` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `book_img` ORDER BY book_id desc LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `categories`  [ RunTime:0.0003s ]
+SQL: select a.*,b.*,c.* from book_img a,user_books b,categories c where a.book_id = b.book_id and b.catid = c.catid and b.userid='9' [ RunTime:0.0009s ]
+SQL: select a.*,b.*,c.* from borrow_books a,user_books b,users c where a.book_id = b.book_id and c.userid = b.userid [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000579s ]
+
+[ 2017-05-16T13:57:22+08:00 ] ::1 /ShareBooks/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001686s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0006s ]
+SQL: SELECT `userid` FROM `users` WHERE ( username='user11' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `notice`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `notice` ORDER BY notice_id desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `upload_img` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `upload_img` ORDER BY create_time desc  [ RunTime:0.0003s ]
+SQL: select a.*,b.*,c.* from zx_img a,zx_books b,categories c where a.zx_id = b.zx_id and b.catid = c.catid [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015732s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2017-05-16T13:58:02+08:00 ] ::1 /ShareBooks/index.php/Home/Sharebooks/shareBooks.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `categories`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `sb_img` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `sb_img` ORDER BY create_time desc  [ RunTime:0.0004s ]
+SQL: select a.username,b.userid,count(b.userid) AS count from users a,user_books b where a.userid = b.userid group by b.userid order by count desc [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2017-05-16T13:58:06+08:00 ] ::1 /ShareBooks/index.php/Home/User/stock/id/1/name/hanry.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: select a.*,b.*,c.* from book_img a,user_books b,categories c where a.book_id = b.book_id and b.catid = c.catid and b.userid='1' [ RunTime:0.0022s ]
+SQL: select c.catname from user_books b,categories c where b.catid = c.catid and b.userid='1' [ RunTime:0.0003s ]
+SQL: select author from user_books where userid='1' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012309s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012456s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001458s ]
+
+[ 2017-05-16T13:58:07+08:00 ] ::1 /ShareBooks/index.php/Home/Bookdetail/bookdetail/id/1/name/hanry.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000802s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: select a.*,b.*,c.* from book_img a,user_books b,categories c where a.book_id = b.book_id and b.catid = c.catid and a.book_id = '1' [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000628s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2017-05-16T13:58:10+08:00 ] ::1 /ShareBooks/index.php/Home/Bookdetail/editBorrow.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+SQL: SHOW COLUMNS FROM `borrow_books` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate E:\wamp64\www\ShareBooks\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto E:\wamp64\www\ShareBooks\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `borrow_books` (`book_id`,`user_id`,`borrow_time`,`deadline`) VALUES ('1','9','2017/5/16','
+                                        10天
+                                    ') [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2017-05-16T13:58:56+08:00 ] ::1 /ShareBooks/index.php/Home/Article/article.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: select a.*,b.* from users a,article b where a.userid = b.userid order by b.create_time desc [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001183s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001288s ]
+

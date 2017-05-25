@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Books首页</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- bulid:css css/combined.css -->
+    <link rel="stylesheet" href="__PUBLIC__/css/normalize.css">
+    <link rel="stylesheet" href="__PUBLIC__/js/vendor/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/js/vendor/OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/main.css">
+    <!-- endbuild -->
+</head>
+<body>
+    <header>
+          <nav class="top clearfix">
+            <span class="location">你的位置：广州大学</span>
+            <ul>
+                <li><a href="#">欢迎回来！</a></li>
+                <li><a href="#" class="account">{$Think.session.account}</a></li>
+                <li><a href="#" target="_blank">购物车</a></li>
+                <li><a href="#" target="_blank">我的书库</a></li>
+                <li><a href="{:U('Index/logout')}">注销</a></li>
+            </ul>
+        </nav>
+        <nav class="main">
+            <a href="__APP__/Home/Index/index.html" class="brand"><img src="__PUBLIC__/img/logo.png" alt="回到首页"></a>
+            <ul>
+                <li><a href="../Index/index.html">首页</a></li>
+                <li><a href="../Sharebooks/shareBooks.html">共享书圈</a></li>
+                <li><a href="../Article/article.html">读书笔记</a></li>
+                <li><a href="#">发现</a></li>
+                <li><a href="#">公益捐书</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="index-tab tab">
+        <div class="container">
+        <div class="ad">
+            <div class="owl-carousel">
+            <volist name="data" id="data">
+                <div class="item">
+                    
+                        <picture>
+                        <source srcset="__UPLOAD__/lImg/{$data['img_url']}" media="(min-width:50em)">
+                        <source srcset="__PUBLIC__/img/ad001-m.png" media="(min-width:30em)">
+                         <img src="__PUBLIC__/img/ad001.png" alt="2017年度报告">
+                    </picture>                                                     
+                 </div>   
+
+            </volist>
+            <!--  <div class="item">
+                    <picture>
+                          <source srcset="__PUBLIC__/img/ad002-l.png" media="(min-width:50em)">
+                         <source srcset="__PUBLIC__/img/ad002-m.png" media="(min-width:30em)">
+                         <img src="__PUBLIC__/img/ad002.png" alt="红包吗">
+                    </picture>
+                </div>
+                 <div class="item">
+                    <picture>
+                          <source srcset="__PUBLIC__/img/ad003-l.png" media="(min-width:50em)">
+                         <source srcset="__PUBLIC__/img/ad003-m.png" media="(min-width:30em)">
+                           <img src="__PUBLIC__/img/ad003.png" alt="平时打的">
+                    </picture>
+                </div> -->
+            </div>
+        </div>
+
+
+
+        <div class="notice clearfix">
+            <a href="#">
+            <span>{$notice[0]['notice_date']|substr=0,10}</span>
+            <span>{$notice[0]['notice_content']}</span>
+            </a>
+            <a href="javascript:void(0)" class="more">更多公告</a>
+        </div>
+        <div class="more-notice">
+                <ul class="u-notice">
+                    <volist name="list" id="data" empty="没有新公告">
+                        <li>
+                            <span>
+                                {$data['notice_date']|substr=0,10}</span>
+                            <span>
+                                {$data['notice_content']}
+                            </span>
+                        </li>
+                                        
+                    </volist>
+                </ul>
+        </div>
+        <section class="product clearfix">
+            <h2>
+                Books
+                <em>在此为你</em>
+                <em>甄选更好的</em>
+
+            </h2>
+            <div class="product-content">
+                <volist name="zx" id="zx">
+                <div class="item clearfix">
+                    <div class="img-book">
+                        <a href="{:U('Zhenxuan/zxDetail',array('id'=>$zx['zx_id']))}" class="img" target="_blank">
+                            <img src="__UPLOAD__/zxImg/{$zx['img_url']}" alt="金钱">
+                        </a>
+                    </div>
+                    <div class="info">
+                            <p class="title">书名：
+                        <span class="title-r">
+                            <a href="{:U('Zhenxuan/zxDetail',array('id'=>$zx['zx_id']))}" target="_blank">{$zx['book_name']}</a>
+                        </span>
+                        </p>
+                        <p class="author">作者：
+                            <span class="author-r">
+                                <a href="{:U('Zhenxuan/zxDetail',array('id'=>$zx['zx_id']))}" target="_blank">{$zx['book_author']}</a>
+                            </span>
+                        </p>
+                         <p>价格：
+                            <span class="price-r">
+                                <span class="sign">
+                                ¥
+                                </span>
+                                <span class="num">{$zx['book_price']}</span>
+                            </span>
+                        </p>
+                    </div>
+                     <div class="recommend">
+                        <p>推荐理由：
+                            <span class="describe">
+                               {$zx['book_recommend']}
+                            </span>
+                        </p>
+                        <p class="tag">
+                            标签：
+                            <button class="btn"><a href="#">{$zx['catname']}</a></button>
+                        </p>
+                    </div>
+                </div>
+                </volist>
+                  
+            </div>
+        </section>
+
+    </div>
+    <!-- end of .container -->
+    </div>
+    <!-- end of index-tab -->
+
+
+
+    
+    <footer>
+        <p>制作者：陈汉林 2016-2017</p>
+    </footer>
+    <!-- bulid:js js/combined.js -->
+   
+</body>
+ <script src="__PUBLIC__/js/vendor/jquery-3.1.1.min.js"></script>
+<script src="__PUBLIC__/js/vendor/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+<script src="__PUBLIC__/js/vendor/picturefill.min.js"></script>
+<script src="__PUBLIC__/js/main.js"></script>
+    <!-- endbulid -->
+<script>
+        var url = "{:U('User/index')}";
+</script>
+</html>
+ 

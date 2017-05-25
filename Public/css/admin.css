@@ -1,0 +1,428 @@
+/*基本样式*/
+
+html{
+    font-size: 62.5%;
+    color: #222;
+}
+
+::selection{
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+ul{
+    margin:0;
+    padding: 0;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*工具样式*/
+
+.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: table;
+}
+.clearfix:after{
+    clear:both;
+}
+
+/*页面样式*/
+/*管理员页面头部样式*/
+
+header{
+    width: 100%;
+}
+
+header .top{
+    line-height: 4rem;
+    padding: 0 1.5rem;
+    color: #fff;
+    background: #555;
+}
+
+header .top .logo{
+    display: inline-block;
+    width: 20%;
+    margin:0 auto;
+    padding-top:0.5rem;
+}
+
+.top .logo .brand img{
+    text-align: center;
+    width:12.5rem;
+    height: 3rem;
+}
+
+header .top .admin-status{
+
+    float: right;
+}
+
+header .top .admin-n{
+    float: left;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+
+.top .admin-n span{
+    display: inline-block;
+    font-size: 1.6rem;
+    color: #ff9980;
+    margin: auto 0.8rem;
+}
+
+.top .out{
+    float: right;
+    margin-right: 2rem;
+}
+
+
+.out ul li{
+    float: left;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+
+}
+
+
+.out ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.out ul li a:hover,
+.out ul li a:active{
+    color: #ff9980;
+    text-decoration: underline;
+}
+
+/*主体页面样式*/
+.container{
+    width: 100%;
+    background: #f7f7f7;
+}
+
+/*左边*/
+.container .container-left{
+    float: left;
+    width: 20%;
+
+}
+
+.container .container-right{
+    float: right;
+    width: 79.9%;
+}
+
+.container-left .tab{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-left .tab ul{
+    margin: 2rem auto;
+}
+
+.container-left .tab ul li{
+    display: block;
+    padding: 1rem;
+    font-size: 1.6rem;
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #555;
+    border-right: none;
+}
+
+.tab ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.container-left .tab ul li.active{
+    background-color: #f7f7f7;
+}
+
+.container-left .tab ul li.active a{
+    background-color: #f7f7f7;
+    color: #000;
+}
+
+/**右边内容*/
+
+/*基本信息*/
+.container .container-right{
+    float: right;
+    width: 79.9%;
+    background: #f7f7f7;
+}
+
+.container-right .edit-account{
+    width: 100%;
+}
+
+.edit-account .e-touxiang{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.e-touxiang .img{
+    display: inline-block;
+}
+.e-touxiang .img img{
+    display: block;
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+/*.edit-touxiang .img span:hover{
+    display: block;
+    position: relative;
+    top: -3rem;
+    z-index: 2;
+    background-color: #fff;
+    opacity: 0.3;
+    text-decoration: none;
+    color: #000;
+}
+*/
+ .edit{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.edit ul{
+    width: 100%;
+}
+
+.edit ul .l1{
+    width: 65%;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.edit ul li .d1{
+    display: inline-block;
+    width: 90%;
+    text-align: right;
+    font-size: 1.6rem;
+}
+
+.edit ul li .d1 span{
+    text-align: right;
+}
+.edit ul li input{
+    width: 40%;
+    line-height: 2rem;
+}
+
+
+
+.edit .btn{
+    display: block;
+    width: 24%;
+    line-height: 2rem;
+    font-size: 1.6rem;
+    margin:2rem auto;
+}
+
+
+/*编辑密码*/
+.u-password .d1 input{
+    display: inline-block;
+}
+.u-password .d1 .err{
+    display: block;
+    text-align: right;
+    color: red;
+}
+
+/*编辑首页*/
+
+/*编辑首页的广告栏*/
+.e-index .btn{
+    display: block;
+    width: 20%;
+    line-height: 2rem;
+    font-size: 1.6rem;
+    margin:2rem 0;
+}
+
+.e-ad{
+    width: 40%;
+    float: left;
+}
+
+.u{
+    margin-bottom: 2rem;
+}
+.u li{
+    float: left;
+    padding:1rem 1rem;
+    background-color: #ccc;
+    border: 1px solid #f7f7f7;
+}
+.u li.active{
+      background-color: #fff;
+      border-bottom: none;
+}
+.u li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #FFF;
+}
+
+.u li.active a{
+    color: #000;
+}
+.edit-square{
+    font-weight: normal;
+    font-size: 1.8rem;
+    padding:0.5rem;
+    margin-bottom: 0;
+    border-bottom: 1px solid #ccc;
+}
+.u-ad li img,.img-ad img{
+    width: 8.333rem;
+    height: 8.333rem;
+}
+
+.u-ad li{
+    margin-right: 0.5rem;
+    float: left;
+}
+
+/*编辑首页的公告*/
+.e-notice{
+    width: 95%;
+    display: inline-block;
+    margin-bottom: 3rem;
+    text-align: left;
+}
+.e-notice .add-notice{
+    width: 40%;
+    text-align: left;
+    float: left;
+}
+
+.e-notice .del-notice{
+    width: 52%;
+    text-align: left;
+    float: right;
+}
+
+.del-book{
+    width: 100%;
+    text-align: left;
+    float: left;
+}
+
+.e-notice .del-notice ul li,.del-book ul li{
+    margin:0.5rem 0;
+}
+
+.del-notice .s-time,.del-notice .s-content{
+    margin-left: 3rem;
+     padding: 1rem 4.5rem 1rem 1rem;
+}
+
+.del-book .s-time,.del-book .s-content{
+    margin-left: 3rem;
+     padding: 1rem 4.5rem 1rem 1rem;
+}
+
+
+.del-notice ul li span,.del-book ul li span{
+    margin-left: 2rem;
+    padding: 1rem 1rem;
+}
+
+.del-notice .del,.del-book .delete{
+    float: right;
+    margin-right: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.del-notice ul li a:hover,.del-book ul li a:hover{
+    color: #ff9900;
+}
+
+/*编辑首页的甄选图书*/
+.e-books{
+    width: 50%;
+    float: right;
+    margin-right: 4rem;
+}
+
+.e-books .book-detail div{
+    margin:1rem 0;
+}
+
+.e-books .book-detail span{
+    font-size: 1.4rem;
+}
+
+.e-books .book-detail input{
+    width: 50%;
+    line-height: 2rem;
+}
+
+.e-books .book-detail textarea{
+    width: 50%;
+
+}
+
+/*编辑共享图书书籍类型*/
+.e-bookType{
+    width: 40%;
+}
+.e-bookType .e-type span{
+   display: inline-block;
+   width: 30%;
+   font-weight: bold;
+}
+
+.e-type .u-type span{
+    display: inline-block;
+    margin:0;
+    width: 30%;
+     font-weight: normal;
+}
+
+.e-type .u-type li{
+    padding:0.5rem;
+}
+
+.e-type .u-type input{
+    display: inline-block;
+    width: 100%;
+    line-height: 0.5rem;
+}
+
+.e-type .u-type a{
+    padding: 0 0.5rem;
+    float: right;
+    cursor: pointer;
+}
+
+.e-type .u-type .confirm,.cancel{
+    visibility: hidden;
+}
+
+
+.e-type .u-type a:hover{
+    color: red;
+    text-decoration: underline;
+}

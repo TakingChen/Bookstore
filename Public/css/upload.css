@@ -1,0 +1,102 @@
+#img{
+    height:22px; 
+    border:#000 2px solid
+}
+
+#button{
+    height:30px; 
+    width:100px;
+}
+
+.img-show,.book-show,.sb-show{
+    height: 100%;
+    margin: 1em 0.2em;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.file-bar,.book-bar,.sb-bar{
+    margin: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: .8;
+    color: #fff;
+    background: none repeat scroll 0 0 #000;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    overflow: hidden;
+}
+
+
+
+.file-name,.sb-name{
+    margin: 0;
+    white-space: nowrap;
+    width: 90%;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    float: left;
+}
+
+.file-del,.book-del,.sb-del{
+    background: url(../img/delete_white.png) no-repeat scroll 0 0 transparent;
+    width: 10%;
+    height: 18px;
+    display: inline;
+    -moz-user-select: none;
+    position: absolute;
+    right: 3px;
+    margin-top: 4px;
+}
+
+.file-del:hover,.book-del:hover,.sb-del:hover{
+    background:url(../img/delete_blue.png) no-repeat scroll 0 0 transparent;
+}
+
+.file-hover{
+    height: 30px;
+    cursor: pointer;
+}
+
+.img-show a ,.book-show a,.sb-show a{
+    display: table-cell;
+    width: 140px;
+    height: 115px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #dfdfdf;
+    background: url(../img/bg.png) no-repeat scroll center 0 transparent;
+}
+
+
+
+.uploadImg{
+    width: 125px;
+    max-width: 125px;
+    max-height: 105px;
+    margin:auto;
+    overflow: hidden;
+}
+
+.uploadImg img{
+    border: 0;
+    display: block;
+    width: 100%;
+    height: auto!important;
+    margin:0;
+    max-height: none!important;
+    max-width: none!important;
+    min-height: 0!important;
+    min-width: 0!important;
+    transform: none;
+    image-orientation: 0deg!important;
+}

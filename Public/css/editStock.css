@@ -1,0 +1,432 @@
+/******
+*页面样式
+********/
+
+/*=======
+ 基本默认值
+ ========*/
+
+html{
+    font-size: 62.5%;
+    color: #222;
+}
+::selection{
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+ul{
+    margin:0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+
+
+
+.text-hide{
+    font:0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border:0;
+}
+
+/*.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix{
+    zoom:1;
+}*/
+.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: table;
+}
+.clearfix:after{
+    clear:both;
+}
+
+/*==========
+  自定义页面样式
+  ==========*/
+body{
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+
+a{
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover,a:acitve{
+    color: #0ae;
+    text-decoration: underline;
+}
+
+/*网站头部*/
+
+header{
+    width: 100%;
+}
+
+header .top{
+    line-height: 3rem;
+    padding: 0 1.5rem;
+    color: #fff;
+    background: #555;
+    border-bottom: 1px #ecc000 solid;
+}
+
+header .top .location{
+    float: left;
+}
+
+.top .location a{
+    color: #fff;
+}
+
+header .top ul{
+    text-align: right;
+}
+
+header .top ul li{
+    display: inline-block;
+}
+
+header .top ul li + li{
+    border-left: 1px solid #999;
+    margin-left: -3px;
+}
+
+header .top ul li a{
+    display: inline-block;
+    padding: 0 1.5rem;
+    color: #fff;
+}
+
+@media only screen and (max-width: 50em){
+    header .top ul li a{
+        padding: 0 1rem;
+    }
+}
+
+@media only screen and (min-width: 30.0625em) and (max-width: 50em){
+
+}
+
+@media only screen and (max-width: 30em){
+    header .top .location,
+    header .top ul li:nth-child(4),
+    header .top ul li:nth-child(5){
+        display: none;
+    }
+}
+
+header .main{
+    padding:0;
+}
+
+header .main .brand{
+    float: left;
+    padding:1rem 1.5rem 0;
+}
+
+
+
+
+@media only screen and (max-width: 30em){
+    header .main ul li{
+        line-height: 3rem;
+    }
+
+    header .main ul li:first-child{
+        display: none;
+    }
+
+    header .main ul li a{
+        font-weight: normal;
+        padding: 0 0.5rem;
+    }
+
+    header .main .brand{
+        display: none;
+    }
+
+    header .top ul{
+        text-align: center;
+    }
+
+    header .top ul li + li{
+        border: none;
+    }
+
+    header .top ul li a{
+        font-size: 1.2rem;
+        margin-right: 2rem;
+    }
+}
+
+/*主体页面样式*/
+.container{
+    width: 100%;
+    background: #f7f7f7;
+}
+
+/*左边*/
+.container .container-left{
+    float: left;
+    width: 20%;
+
+}
+
+.container .container-right{
+    float: right;
+    width: 79.9%;
+}
+
+.container-left .tab{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-left .tab ul{
+    margin: 2rem auto;
+}
+
+.container-left .tab ul li{
+    display: block;
+    padding: 1rem;
+    font-size: 1.6rem;
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #555;
+    border-right: none;
+}
+
+.tab ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.container-left .tab ul li.active{
+    background-color: #f7f7f7;
+}
+
+.container-left .tab ul li.active a{
+    background-color: #f7f7f7;
+    color: #000;
+}
+
+/**右边内容*/
+
+/*基本信息*/
+.container .container-right{
+    float: right;
+    width: 79.9%;
+    background: #f7f7f7;
+}
+
+.container-right .edit-account{
+    width: 100%;
+}
+
+
+ .edit{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.edit ul{
+    width: 100%;
+}
+
+.edit ul .l1{
+    width: 65%;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.edit ul li .d1{
+    display: inline-block;
+    width: 90%;
+    text-align: right;
+    font-size: 1.6rem;
+}
+
+.edit ul li .d1 span{
+    text-align: right;
+}
+.edit ul li input{
+    width: 40%;
+    line-height: 2rem;
+}
+
+
+
+.edit .btn{
+    display: block;
+    width: 24%;
+    line-height: 2rem;
+    font-size: 1.6rem;
+    margin:2rem auto;
+}
+
+
+
+/*编辑首页*/
+
+/*编辑首页的广告栏*/
+.e-index .btn{
+    display: block;
+    width: 20%;
+    line-height: 2rem;
+    font-size: 1.6rem;
+    margin:2rem 0;
+}
+
+
+.u{
+    margin-bottom: 2rem;
+}
+.u li{
+    float: left;
+    padding:1rem 1rem;
+    background-color: #ccc;
+    border: 1px solid #f7f7f7;
+}
+.u li.active{
+      background-color: #fff;
+      border-bottom: none;
+}
+.u li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #FFF;
+}
+
+.u li.active a{
+    color: #000;
+}
+
+.del-book{
+    width: 100%;
+    text-align: left;
+    float: left;
+}
+
+.del-book ul li{
+    margin:0.5rem 0;
+}
+
+.del-book .s-time,.del-book .s-content{
+    margin-left: 3rem;
+     padding: 1rem 4.5rem 1rem 1rem;
+}
+
+.del-book ul li span{
+    margin-left: 2rem;
+    padding: 1rem 1rem;
+}
+
+.del-book .delete{
+    float: right;
+    margin-right: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.del-book ul li a:hover{
+    color: #ff9900;
+}
+
+/*编辑首页的甄选图书*/
+.e-books{
+    width: 50%;
+    float: left;
+    margin-right: 4rem;
+}
+
+.e-books .book-detail div{
+    margin:1rem 0;
+}
+
+.e-books .book-detail span{
+    font-size: 1.4rem;
+}
+
+.e-books .book-detail input{
+    width: 50%;
+    line-height: 2rem;
+}
+
+.e-books .book-detail textarea{
+    width: 50%;
+
+}
+
+/*编辑共享图书书籍类型*/
+.e-bookType{
+    width: 40%;
+}
+.e-bookType .e-type span{
+   display: inline-block;
+   width: 30%;
+   font-weight: bold;
+}
+
+.e-type .u-type span{
+    display: inline-block;
+    margin:0;
+    width: 30%;
+     font-weight: normal;
+}
+
+.e-type .u-type li{ 
+    padding:0.5rem;
+}
+
+.e-type .u-type input{
+    display: inline-block;
+    width: 100%;
+    line-height: 0.5rem;
+}
+
+.e-type .u-type a{
+    padding: 0 0.5rem;
+    float: right;
+    cursor: pointer;
+}
+
+.e-type .u-type .confirm,.cancel{
+    visibility: hidden;
+}
+
+
+.e-type .u-type a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+.e-borrow .tr-title span{
+    font-weight: bold;
+    margin:2rem;
+    padding: 2rem;
+}
+
+.e-borrow ul li{
+    margin:1rem 0;
+}
+.e-borrow ul li span{
+    margin:2rem;
+    padding: 2rem;
+}

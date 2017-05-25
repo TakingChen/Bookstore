@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>分类图书库</title>
+    <link rel="stylesheet" href="__PUBLIC__/css/userLibrary.css">
+</head>
+<body>
+    <header>
+     <nav class="top clearfix">
+            <span class="location">你的位置：广州大学</span>
+            <ul>
+                <li><a href="#">欢迎回来！</a></li>
+                <li><a href="#" class="account">{$Think.session.account}</a></li>
+                <li><a href="#" target="_blank">购物车</a></li>
+                <li><a href="#" target="_blank">我的书库</a></li>
+                <li><a href="{:U('Index/logout')}">注销</a></li>
+            </ul>
+        </nav>    
+    </header>
+    <div class="container commonWidth">
+        <div class="location">
+            <span>当前 &gt</span>
+            <span>
+                 <volist name="cate" id="cate">
+                    <li>
+                        <a href="">{$cate['catname']}</a>
+                    </li>
+                </volist>
+            </span>
+        </div>
+        <div class="selector">
+            <!-- end of .book-type -->
+            <div class="sort book-author">
+                <div class="wrap">
+                    <div class="book-key">
+                        <strong>作 者</strong>
+                        <span></span>
+                    </div>
+                    <div class="book-value d-author">
+                        <ul>
+                        <volist name="auth" id="auth">
+                            <li>
+                                <a href="">{$auth['author']}</a>
+                            </li>
+                        </volist>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end of .book-author -->
+            <div class="sort book-country">
+                <div class="wrap">
+                    <div class="book-key">
+                        <strong>国 家</strong>
+                         <span></span>
+                    </div>
+                    <div class="book-value d-country">
+                        <ul>
+                            <li>
+                                <a href="">中国大陆</a>
+                            </li>
+                            <li>
+                                <a href="">中国港澳台</a>
+                            </li>
+                            <li>
+                                <a href="">欧洲</a>
+                            </li>
+                            <li>
+                                <a href="">美国</a>
+                            </li>
+                            <li>
+                                <a href="">俄罗斯</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end of .book-country -->
+        </div>
+        <!-- end of .selector -->
+        <div class="book-item commonWidth">
+            <hr>
+            <div class="book-i-list">
+                <ul>
+                <volist name="sort" id="sort">
+                    <li class="list-item1 item">
+                        <div class="book-img">
+                            <a href="{:U('Bookdetail/bookdetail',array('id'=>$sort['book_id'],'name'=>$user))}" class="img" target="_blank">
+                                <img src="__UPLOAD__/bookImg/{$sort['img_url']}" alt="book-img1">
+                            </a>
+                        </div>
+                        <div class="detail">
+                            <p class="title">
+                                <span class="s-title"><a href="#">{$sort['title']}</a></span>
+                            </p>
+                            <p class="tab">
+                                <span class="s-tab">标签：<i>{$sort['catname']}</i></span>
+                            </p>
+                            <p class="author">
+                                <span class="s-author">
+                                      作者：<a href="#">{$sort['author']}</a>
+                                </span>
+                            </p>
+                        </div>
+                    </li>
+                    </volist>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="__PUBLIC__/js/vendor/jquery-3.1.1.min.js"></script>
+<script src="__PUBLIC__/js/userLibrary.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文章详细</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/article.css">
+</head>
+<body>
+	<header>
+          <nav class="top clearfix">
+            <span class="location">你的位置：广州大学</span>
+            <ul>
+                <li><a href="#">欢迎回来！</a></li>
+                <li><a href="__APP__/Home/Mine/mine.html" class="account">{$Think.session.account}</a></li>
+                <li><a href="#" target="_blank">购物车</a></li>
+                <li><a href="#" target="_blank">我的书库</a></li>
+                <li><a href="{:U('Index/logout')}">注销</a></li>
+            </ul>
+        </nav>
+    </header>
+	<div class="container">	
+		<div class="article-detail">
+		  <volist name="article" id="article">
+			<div class="title">
+				<h1>{$article['title']}</h1>
+			</div>
+			<div class="info">
+				<div class="publish-user"> 
+					<span>发布者：</span>
+						<span>{$article['username']}</span>
+				</div>
+				<div class="publish-time">
+					<span>发布时间：</span>
+					<span>{$article['create_time']|substr=0,10}</span>
+				</div>
+			</div>
+			<div class="content">
+				<span>{$article['content']}</span>
+			</div>
+			</volist>
+		</div>
+	
+	</div>
+
+</body>
+ <script src="__PUBLIC__/js/vendor/jquery-3.1.1.min.js"></script>
+</html>
