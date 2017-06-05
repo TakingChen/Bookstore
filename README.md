@@ -1,8 +1,8 @@
 # Bookstore
 图书租借系统
 该系统是基于PHP+MySQL+HTML实现的，在wamp中运行
-主要的界面如下：</br>
-<h2>登陆注册界面</h2>
+主要的界面如下：  
+##登陆注册界面
 ![登陆注册界面](https://github.com/TakingChen/Bookstore/blob/master/Show/login.png)
 <h2>登陆注册检测</h2>
 ![登陆注册检测](https://github.com/TakingChen/Bookstore/blob/master/Show/check.png)
